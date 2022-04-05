@@ -1,23 +1,13 @@
-import React from "react";
-import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { HEADER_SOCIALS } from "../../constants/header";
 
 const HeaderSocials = () => {
     return (
         <div className="header__socials">
-            <a
-                href="https://www.linkedin.com/in/fede-milone/"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <BsLinkedin />
-            </a>
-            <a
-                href="https://github.com/fedeemilo"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <BsGithub />
-            </a>
+            {HEADER_SOCIALS.map(({ url, icon, id }) => (
+                <a key={id} href={url} target="_blank" rel="noreferrer">
+                    {icon}
+                </a>
+            ))}
         </div>
     );
 };

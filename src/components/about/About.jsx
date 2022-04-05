@@ -1,52 +1,42 @@
-import React from "react";
 import "./about.css";
-import ME from ".././../assets/me-about.jpg";
-import { FaAward } from "react-icons/fa";
-import { FiUsers } from "react-icons/fi";
-import { VscFolderLibrary } from "react-icons/vsc";
+import { useContext } from "react";
+import { ICONS } from "../../constants/icons";
+import { ABOUT_CARDS, ABOUT_ME_TEXT } from "../../constants/about";
+import { STRINGS } from "../../constants/strings";
+import { CONTEXT } from "../../core/context";
 
 const About = () => {
+    const {
+        state: { lang }
+    } = useContext(CONTEXT);
+
     return (
         <section id="about">
-            <h5>Get To Know</h5>
-            <h2>About Me</h2>
+            <h5>{STRINGS.GET_TO_KNOW[lang]}</h5>
+            <h2>{STRINGS.ABOUT_ME[lang]}</h2>
 
             <div className="container about__container">
                 <div className="about__me">
                     <div className="about__me-image">
-                        <img src={ME} alt="me-about" />
+                        <img src={ICONS.ME_ABOUT} alt="me-about" />
                     </div>
                 </div>
 
                 <div className="about__content">
                     <div className="about__cards">
-                        <article className="about__card">
-                            <FaAward className="about__icon" />
-                            <h5>Experience</h5>
-                            <small>3+ Years Working</small>
-                        </article>
-                        <article className="about__card">
-                            <FiUsers className="about__icon" />
-                            <h5>Clients</h5>
-                            <small>200+ Worldwide</small>
-                        </article>
-                        <article className="about__card">
-                            <VscFolderLibrary className="about__icon" />
-                            <h5>Projects</h5>
-                            <small>80+ Completed</small>
-                        </article>
+                        {ABOUT_CARDS.map(({ key, icon, title, detail }) => (
+                            <article key={key} className="about__card">
+                                {icon}
+                                <h5>{title(lang)}</h5>
+                                <small>{detail}</small>
+                            </article>
+                        ))}
                     </div>
 
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Facere modi, laudantium, fugit similique assumenda velit
-                        nostrum nulla obcaecati, accusantium esse repudiandae
-                        molestias? Impedit possimus nobis magnam, delectus
-                        doloremque obcaecati sit.
-                    </p>
+                    <p>{ABOUT_ME_TEXT[lang]}</p>
 
                     <a href="#contact" className="btn btn-primary">
-                        Let's Talk
+                        {STRINGS.LETS_TALK[lang]}
                     </a>
                 </div>
             </div>

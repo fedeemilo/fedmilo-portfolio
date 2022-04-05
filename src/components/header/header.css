@@ -47,7 +47,6 @@ header {
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
     padding: 0 1.2rem 1.2rem 1.2rem;
-
 }
 
 /* ======================= SCROLL DOWN ======================= */
@@ -60,10 +59,93 @@ header {
     font-size: 0.9rem;
 }
 
+/* ======================= SWITCH LANGUAGE ======================= */
+
+.switch__language {
+    display: flex;
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+    width: 11.7rem;
+}
+
+.en,
+.es {
+    color: var(--color-primary-variant);
+}
+
+.en {
+    margin-right: 0.8rem;
+}
+
+.es {
+    margin-left: 0.8rem;
+}
+
+.active__lang {
+    color: var(--color-primary);
+}
+
+.check {
+    position: relative;
+    width: 50px;
+    cursor: pointer;
+}
+
+.check:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: var(--color-bg-variant);
+
+    border-radius: 25px;
+}
+
+.check:checked:before {
+    background: var(--color-primary);
+}
+
+.check:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 25px;
+    height: 25px;
+    background: var(--color-white);
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 1px solid var(--color-bg);
+    box-sizing: border-box;
+}
+
+.check:checked:after {
+    left: 25px;
+    border: 2px solid var(--color-bg-variant);
+}
+
 /* ======================= MEDIA QUERIES (MEDIUM DEVICES) ======================= */
+
 @media screen and (max-width: 1024px) {
     header {
         height: 100vh;
+    }
+
+    .switch__language {
+        display: flex;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .en {
+        margin-right: 1rem;
+    }
+
+    .es {
+        margin-left: 4rem;
     }
 }
 
@@ -77,5 +159,21 @@ header {
     .scroll__down {
         display: none;
     }
-}
 
+    .switch__language {
+        display: flex;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .en {
+        margin-right: 1rem;
+    }
+
+    .es {
+        margin-left: 4rem;
+    }
+}

@@ -1,4 +1,7 @@
-import React from "react";
+import { useEffect, useReducer } from "react";
+import { language } from "./core/reducer/language";
+import { store } from "./core/store";
+import Provider from "./core/context";
 import Header from "./components/header/Header";
 import Nav from "./components/nav/Nav";
 import About from "./components/about/About";
@@ -8,10 +11,28 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import { ADD_INITIAL_VALUE, CHANGE_LANGUAGE } from "./core/types";
 
 const App = () => {
+    const [state, dispatch] = useReducer(language, store);
+
+        const toggleLanguage = lang =>
+            dispatch({
+                type: CHANGE_LANGUAGE,
+                payload: lang
+            });
+    
+    useEffect(() => {
+        dispatch({
+            type: ADD_INITIAL_VALUE,
+            payload: {
+                toggleLanguage
+            }
+        });
+    }, [state.action]);
+
     return (
-        <>
+        <Provider value={{ dispatch, state }}>
             <Header />
             <Nav />
             <About />
@@ -21,7 +42,7 @@ const App = () => {
             <Testimonials />
             <Contact />
             <Footer />
-        </>
+        </Provider>
     );
 };
 
