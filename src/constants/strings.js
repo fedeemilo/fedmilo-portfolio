@@ -120,8 +120,8 @@ export const STRINGS = {
         es: "Proyectos"
     },
     REVIEWS_FROM: {
-        en: "Reviews From Colleagues & Clients",
-        es: "Comentarios De Colegas Y Clientes"
+        en: "Reviews From Colleagues & Clients (In Construcion...)",
+        es: "Comentarios De Colegas Y Clientes (En Construcción...)"
     },
     SCROLL_DOWN: {
         en: "Scroll Down",
