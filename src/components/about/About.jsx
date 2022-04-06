@@ -28,7 +28,7 @@ const About = () => {
                             <article key={key} className="about__card">
                                 {icon}
                                 <h5>{title(lang)}</h5>
-                                <small>{detail}</small>
+                                <small>{detail(lang)}</small>
                             </article>
                         ))}
                     </div>

@@ -58,6 +58,11 @@ const EXP_CONTENT_BACKEND = [
         id: 5,
         title: "Python",
         detail: lang => STRINGS.BASIC[lang]
+    },
+    {
+        id: 6,
+        title: "Java",
+        detail: lang => STRINGS.INTERMEDIATE[lang]
     }
 ];
 

@@ -1,11 +1,17 @@
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
 import "./contact.css";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessageLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
 import emailjs from "emailjs-com";
+import { CONTEXT } from "../../core/context";
+import { STRINGS } from "../../constants/strings";
 
 const Contact = () => {
+    const {
+        state: { lang }
+    } = useContext(CONTEXT);
+
     const form = useRef();
 
     const sendEmail = e => {
@@ -23,8 +29,8 @@ const Contact = () => {
 
     return (
         <section id="contact">
-            <h5>Get In Touch</h5>
-            <h2>Contact Me</h2>
+            <h5>{STRINGS.GET_IN_TOUCH[lang]}</h5>
+            <h2>{STRINGS.CONTACT_ME[lang]}</h2>
 
             <div className="container contact__container">
                 <div className="contact__options">
@@ -37,7 +43,7 @@ const Contact = () => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            Send a message
+                            {STRINGS.SEND_A_MESSAGE[lang]}
                         </a>
                     </article>
                     <article className="contact__option">
@@ -49,7 +55,7 @@ const Contact = () => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            Send a message
+                            {STRINGS.SEND_A_MESSAGE[lang]}
                         </a>
                     </article>
                     <article className="contact__option">
@@ -61,7 +67,7 @@ const Contact = () => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            Send a message
+                            {STRINGS.SEND_A_MESSAGE[lang]}
                         </a>
                     </article>
                 </div>

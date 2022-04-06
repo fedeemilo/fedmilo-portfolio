@@ -16,6 +16,14 @@ export const STRINGS = {
         en: "Clients",
         es: "Clientes"
     },
+    COMPLETED: {
+        en: "40+ Completed",
+        es: "40+ Completados"
+    },
+    CONTACT_ME: {
+        en: "Contact Me",
+        es: "Contáctame"
+    },
     CONTENT_CREATION: {
         en: "Content Creation",
         es: "Creación de Contenido"
@@ -40,6 +48,10 @@ export const STRINGS = {
     FRONTEND_DEV: {
         en: "Frontend Development",
         es: "Desarrollo Frontend"
+    },
+    GET_IN_TOUCH: {
+        en: "Get In Touch",
+        es: "Ponerse En Contacto"
     },
     GET_TO_KNOW: {
         en: "Get To Know",
@@ -83,13 +95,17 @@ export const STRINGS = {
         en: "Projects",
         es: "Proyectos"
     },
-    SERVICES: {
-        en: "Services",
-        es: "Servicios"
-    },
     SCROLL_DOWN: {
         en: "Scroll Down",
         es: "Scrollear Abajo"
+    },
+    SEND_A_MESSAGE: {
+        en: "Send a message",
+        es: "Enviar un mensaje"
+    },
+    SERVICES: {
+        en: "Services",
+        es: "Servicios"
     },
     SKILLS_I_HAVE: {
         en: "What Skills I Have",
@@ -110,5 +126,13 @@ export const STRINGS = {
     WHAT_I_OFFER: {
         en: "What I Offer",
         es: "Lo Que Ofrezco"
+    },
+    WORLDWIDE: {
+        en: "20+ Worldwide",
+        es: "20+ En Todo El Mundo"
+    },
+    YEARS_WORKING: {
+        en: "3+ Years Working",
+        es: "3+ Años Trabajando"
     }
 };

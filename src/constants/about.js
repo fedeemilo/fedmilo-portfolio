@@ -8,19 +8,19 @@ const ABOUT_CARDS = [
         key: "experience",
         icon: <FaAward className="about__icon" />,
         title: lang => STRINGS.EXPERIENCE[lang],
-        detail: "3+ Years Working"
+        detail: lang => STRINGS.YEARS_WORKING[lang]
     },
     {
         key: "clients",
         icon: <FiUsers className="about__icon" />,
         title: lang => STRINGS.CLIENTS[lang],
-        detail: "200+ Worldwide"
+        detail: lang => STRINGS.WORLDWIDE[lang]
     },
     {
         key: "projects",
         icon: <VscFolderLibrary className="about__icon" />,
         title: lang => STRINGS.PROJECTS[lang],
-        detail: "80+ Completed"
+        detail: lang => STRINGS.COMPLETED[lang]
     }
 ];
 
