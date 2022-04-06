@@ -119,6 +119,10 @@ export const STRINGS = {
         en: "Projects",
         es: "Proyectos"
     },
+    REVIEWS_FROM: {
+        en: "Reviews From Colleagues & Clients",
+        es: "Comentarios De Colegas Y Clientes"
+    },
     SCROLL_DOWN: {
         en: "Scroll Down",
         es: "Scrollear Abajo"
@@ -138,6 +142,10 @@ export const STRINGS = {
     SPANISH: {
         en: "Spanish",
         es: "Español"
+    },
+    TESTIMONIALS: {
+        en: "Testimonials",
+        es: "Testimonios"
     },
     USER_EXP_CONSULTING: {
         en: "User Experience Consulting",
