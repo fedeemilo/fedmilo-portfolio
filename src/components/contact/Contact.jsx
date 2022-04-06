@@ -75,23 +75,23 @@ const Contact = () => {
                     <input
                         type="text"
                         name="name"
-                        placeholder="Your Full Name"
+                        placeholder={STRINGS.YOUR_FULL_NAME[lang]}
                         required
                     />
                     <input
                         type="email"
                         name="email"
-                        placeholder="Your Email"
+                        placeholder={STRINGS.YOUR_EMAIL[lang]}
                         required
                     />
                     <textarea
                         name="message"
                         rows="7"
-                        placeholder="Your Message"
+                        placeholder={STRINGS.YOUR_MESSAGE[lang]}
                         required
                     ></textarea>
                     <button type="submit" className="btn btn-primary">
-                        Send Message
+                        {STRINGS.SEND_A_MESSAGE[lang]}
                     </button>
                 </form>
             </div>

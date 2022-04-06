@@ -134,5 +134,17 @@ export const STRINGS = {
     YEARS_WORKING: {
         en: "3+ Years Working",
         es: "3+ Años Trabajando"
+    },
+    YOUR_EMAIL: {
+        en: "Your Email",
+        es: "Tu Email"
+    },
+    YOUR_FULL_NAME: {
+        en: "Your Full Name",
+        es: "Tu Nombre Completo"
+    },
+    YOUR_MESSAGE: {
+        en: "Your Message",
+        es: "Tu Mensaje"
     }
 };

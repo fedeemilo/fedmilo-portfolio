@@ -26,27 +26,31 @@ const UX_DESIGN_ITEMS = [
 const WEB_DEV_ITEMS = [
     {
         id: 1,
-        title: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        title: "Websites"
     },
     {
         id: 2,
-        title: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        title: "Online Stores"
     },
     {
         id: 3,
-        title: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        title: "Web Applications"
     },
     {
         id: 4,
-        title: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        title: "Content Management Systems"
     },
     {
         id: 5,
-        title: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        title: "Web Developing Consulting"
     },
     {
         id: 6,
-        title: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        title: "Custom REST API"
+    },
+    {
+        id: 7,
+        title: "BFF With GraphQL"
     }
 ];
 
