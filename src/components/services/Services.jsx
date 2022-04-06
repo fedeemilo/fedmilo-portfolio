@@ -26,7 +26,7 @@ const Services = () => {
                             {items.map(({ id, title }) => (
                                 <li key={id}>
                                     <BiCheck className="service__list-icon" />
-                                    <p>{title}</p>
+                                    <p>{title(lang)}</p>
                                 </li>
                             ))}
                         </ul>

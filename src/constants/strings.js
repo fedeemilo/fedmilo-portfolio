@@ -8,6 +8,10 @@ export const STRINGS = {
         en: "Backend Development",
         es: "Desarrollo Backend"
     },
+    BFF_WITH_GRAHPQL: {
+        en: "BFF With GraphQL",
+        es: "Bff Con GraphQL"
+    },
     BASIC: {
         en: "Basic",
         es: "Básico"
@@ -15,6 +19,10 @@ export const STRINGS = {
     CLIENTS: {
         en: "Clients",
         es: "Clientes"
+    },
+    CMS: {
+        en: "Content Management Systems",
+        es: "Sistemas De Gestión De Contenido"
     },
     COMPLETED: {
         en: "40+ Completed",
@@ -27,6 +35,14 @@ export const STRINGS = {
     CONTENT_CREATION: {
         en: "Content Creation",
         es: "Creación de Contenido"
+    },
+    CONTENT_STRATEGY: {
+        en: "Content Strategy",
+        es: "Estrategia De Contenido"
+    },
+    CUSTOM_REST_API: {
+        en: "Custom REST API",
+        es: "API REST Personalizada"
     },
     DOWNLOAD_CV: {
         en: "Download CV",
@@ -80,16 +96,24 @@ export const STRINGS = {
         es: "Mi Experiencia"
     },
     MY_RECENT_WORK: {
-        en: "My Recent Work",
-        es: "Mi Trabajo Reciente"
+        en: "My Recent Work (In Construction...)",
+        es: "Mi Trabajo Reciente (En Construcción...)"
     },
     MY_STACK: {
         en: "Fullstack Web Developer",
         es: "Desarrollador Web Fullstack"
     },
+    ONLINE_STORES: {
+        en: "Online Stores",
+        es: "Tiendas Online"
+    },
     PORTFOLIO: {
         en: "Portfolio",
         es: "Portafolio"
+    },
+    PRODUCT_DESIGN: {
+        en: "Product Design",
+        es: "Diseño Del Producto"
     },
     PROJECTS: {
         en: "Projects",
@@ -115,17 +139,45 @@ export const STRINGS = {
         en: "Spanish",
         es: "Español"
     },
+    USER_EXP_CONSULTING: {
+        en: "User Experience Consulting",
+        es: "Consultoría De experiencia De usuario"
+    },
+    USER_FLOW_CHARTS: {
+        en: "User Flow Charts",
+        es: "Diagramas De Flujo De Usuario"
+    },
+    USER_STORIES: {
+        en: "User Stories",
+        es: "Historias de Usuario"
+    },
     UX_DESIGN: {
         en: "UI/UX Design",
         es: "Diseño UI/UX"
+    },
+    WEB_APPLICATIONS: {
+        en: "Web Applications",
+        es: "Aplicaciones Web"
+    },
+    WEBSITES: {
+        en: "Websites",
+        es: "Sitios Web"
     },
     WEB_DEVELOPMENT: {
         en: "Web Development",
         es: "Desarrollo Web"
     },
+    WEB_DEV_CONSULTING: {
+        en: "Web Developing Consulting",
+        es: "Consultoría En Desarrollo Web"
+    },
     WHAT_I_OFFER: {
         en: "What I Offer",
         es: "Lo Que Ofrezco"
+    },
+    WIREFRAMES: {
+        en: "Wireframes",
+        es: "Estructuras Alámbricas"
     },
     WORLDWIDE: {
         en: "20+ Worldwide",

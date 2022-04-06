@@ -30,6 +30,11 @@ const EXP_CONTENT_FRONTEND = [
         id: 6,
         title: "React",
         detail: lang => STRINGS.EXPERIENCED[lang]
+    },
+    {
+        id: 7,
+        title: "BootStrap",
+        detail: lang => STRINGS.EXPERIENCED[lang]
     }
 ];
 
@@ -62,6 +67,11 @@ const EXP_CONTENT_BACKEND = [
     {
         id: 6,
         title: "Java",
+        detail: lang => STRINGS.INTERMEDIATE[lang]
+    },
+    {
+        id: 7,
+        title: "GraphQL",
         detail: lang => STRINGS.INTERMEDIATE[lang]
     }
 ];
