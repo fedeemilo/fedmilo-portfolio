@@ -1,6 +1,7 @@
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { BiBook, BiMessageSquareDetail } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
+import { BsBriefcase } from 'react-icons/bs'
 
 const NAV_ITEMS = [
     {
@@ -18,6 +19,10 @@ const NAV_ITEMS = [
     {
         id: "#services",
         children: <RiServiceLine />
+    },
+    {
+        id: "#portfolio",
+        children: <BsBriefcase />
     },
     {
         id: "#contact",
