@@ -1,45 +1,36 @@
 import "./footer.css";
+import { useContext } from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
+import { STRINGS } from "../../constants/strings";
+import { CONTEXT } from "../../core/context";
+import { FOOTER_LINKS, FOOTER_SOCIALS } from "../../constants/footer";
 
 const Footer = () => {
+    const {
+        state: { lang }
+    } = useContext(CONTEXT);
+
     return (
         <footer>
             <a href="#" className="footer__logo">
-                fedmilo
+                {STRINGS.FEDMILO.alias}
             </a>
 
             <ul className="permalinks">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#experience">Experience</a>
-                </li>
-                <li>
-                    <a href="#services">Services</a>
-                </li>
-                <li>
-                    <a href="#portfolio">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#testimonials">Testimonials</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
+                {FOOTER_LINKS.map(({ id, title }) => (
+                    <li key={id}>
+                        <a href={id}>{title(lang)}</a>
+                    </li>
+                ))}
             </ul>
 
             <div className="footer__socials">
-                <a href="https://facebook.com">
-                    <FaFacebookF />
-                </a>
-                <a href="https://instagram.com">
-                    <FiInstagram />
-                </a>
+                {FOOTER_SOCIALS.map(({ id, url, icon }) => (
+                    <a key={id} href={url}>
+                        {icon}
+                    </a>
+                ))}
             </div>
 
             <div className="footer__copyright">

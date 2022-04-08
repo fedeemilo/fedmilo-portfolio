@@ -1,4 +1,8 @@
 export const STRINGS = {
+    ABOUT: {
+        en: "About",
+        es: "Acerca De"
+    },
     ABOUT_ME: {
         en: "About Me",
         es: "Sobre Mí"
@@ -27,6 +31,10 @@ export const STRINGS = {
     COMPLETED: {
         en: "40+ Completed",
         es: "40+ Completados"
+    },
+    CONTACT: {
+        en: "Contact",
+        es: "Contacto"
     },
     CONTACT_ME: {
         en: "Contact Me",
@@ -60,6 +68,10 @@ export const STRINGS = {
         en: "Experienced",
         es: "Experimentado"
     },
+    FEDMILO: {
+        alias: "fedmilo",
+        full: "Federico Milone"
+    },
     FRONTEND: "frontend",
     FRONTEND_DEV: {
         en: "Frontend Development",
@@ -77,6 +89,10 @@ export const STRINGS = {
     HELLO_IM: {
         en: "Hello I'm",
         es: "Hola Soy"
+    },
+    HOME: {
+        en: "Home",
+        es: "Inicio"
     },
     INTERMEDIATE: {
         en: "Intermediate",
