@@ -27,14 +27,14 @@ const Footer = () => {
 
             <div className="footer__socials">
                 {FOOTER_SOCIALS.map(({ id, url, icon }) => (
-                    <a key={id} href={url}>
+                    <a key={id} href={url} target="_blank" rel="noreferrer">
                         {icon}
                     </a>
                 ))}
             </div>
 
             <div className="footer__copyright">
-                <small>&copy; fedmilo portfolio. All rights reserved.</small>
+                <small>&copy; {STRINGS.FEDMILO_COPYRIGHT[lang]}</small>
             </div>
         </footer>
     );

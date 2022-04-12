@@ -72,6 +72,10 @@ export const STRINGS = {
         alias: "fedmilo",
         full: "Federico Milone"
     },
+    FEDMILO_COPYRIGHT: {
+        en: "fedmilo portfolio. All rights reserved.",
+        es: "Portfolio de fedmilo. Todos los derechos reservados."
+    },
     FRONTEND: "frontend",
     FRONTEND_DEV: {
         en: "Frontend Development",
