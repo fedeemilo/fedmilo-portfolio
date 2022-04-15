@@ -12,16 +12,17 @@ import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import { ADD_INITIAL_VALUE, CHANGE_LANGUAGE } from "./core/types";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
     const [state, dispatch] = useReducer(language, store);
 
-        const toggleLanguage = lang =>
-            dispatch({
-                type: CHANGE_LANGUAGE,
-                payload: lang
-            });
-    
+    const toggleLanguage = lang =>
+        dispatch({
+            type: CHANGE_LANGUAGE,
+            payload: lang
+        });
+
     useEffect(() => {
         dispatch({
             type: ADD_INITIAL_VALUE,
@@ -32,17 +33,20 @@ const App = () => {
     }, [state.action]);
 
     return (
-        <Provider value={{ dispatch, state }}>
-            <Header />
-            <Nav />
-            <About />
-            <Experience />
-            <Services />
-            <Portfolio />
-            <Testimonials />
-            <Contact />
-            <Footer />
-        </Provider>
+        <>
+            <Toaster />
+            <Provider value={{ dispatch, state }}>
+                <Header />
+                <Nav />
+                <About />
+                <Experience />
+                <Services />
+                <Portfolio />
+                <Testimonials />
+                <Contact />
+                <Footer />
+            </Provider>
+        </>
     );
 };
 

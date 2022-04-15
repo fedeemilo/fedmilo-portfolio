@@ -1,7 +1,5 @@
 import "./footer.css";
 import { useContext } from "react";
-import { FaFacebookF } from "react-icons/fa";
-import { FiInstagram } from "react-icons/fi";
 import { STRINGS } from "../../constants/strings";
 import { CONTEXT } from "../../core/context";
 import { FOOTER_LINKS, FOOTER_SOCIALS } from "../../constants/footer";

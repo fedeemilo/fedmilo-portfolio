@@ -76,6 +76,14 @@ export const STRINGS = {
         en: "fedmilo portfolio. All rights reserved.",
         es: "Portfolio de fedmilo. Todos los derechos reservados."
     },
+    FORM_ERROR: {
+        en: "There was an error sending the email.",
+        es: "Ha habido un error al enviar el email."
+    },
+    FORM_SUCCESS: {
+        en: "Email sent successfully!",
+        es: "Email enviado con éxito!"
+    },
     FRONTEND: "frontend",
     FRONTEND_DEV: {
         en: "Frontend Development",
@@ -109,6 +117,10 @@ export const STRINGS = {
     LIVE_DEMO: {
         en: "Live Demo",
         es: "Demo En Vivo"
+    },
+    LOADING: {
+        en: "Loading...",
+        es: "Cargando..."
     },
     MY_ALIAS: "fedmilo",
     MY_EXP: {
