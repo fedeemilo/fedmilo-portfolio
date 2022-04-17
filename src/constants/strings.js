@@ -7,6 +7,10 @@ export const STRINGS = {
         en: "About Me",
         es: "Sobre Mí"
     },
+    APP_TRAVEL_ADVISOR: {
+        en: "Travel Advisor - App with recommendations for trips in React",
+        es: "Travel Advisor - Aplicación con recomendaciones para viajes en React"
+    },
     BACKEND: "backend",
     BACKEND_DEV: {
         en: "Backend Development",
@@ -77,12 +81,12 @@ export const STRINGS = {
         es: "Portfolio de fedmilo. Todos los derechos reservados."
     },
     FORM_ERROR: {
-        en: "There was an error sending the email.",
-        es: "Ha habido un error al enviar el email."
+        en: "There was an error sending the message.",
+        es: "Ha habido un error al enviar el mensaje."
     },
     FORM_SUCCESS: {
-        en: "Email sent successfully!",
-        es: "Email enviado con éxito!"
+        en: "Message sent successfully!",
+        es: "Mensaje enviado con éxito!"
     },
     FRONTEND: "frontend",
     FRONTEND_DEV: {

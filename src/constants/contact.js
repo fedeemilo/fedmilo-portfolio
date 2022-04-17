@@ -1,7 +1,7 @@
-import { STRINGS } from "./strings";
 import emailjs from "emailjs-com";
+import { STRINGS } from "./strings";
 import { MdOutlineEmail } from "react-icons/md";
-import { RiMessageLine } from "react-icons/ri";
+import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
 
 const EMAIL_PROMISE = form =>
@@ -48,7 +48,7 @@ const CONTACT_OPTIONS = [
     },
     {
         id: 2,
-        icon: <MdOutlineEmail className="contact__option-icon" />,
+        icon: <RiMessengerLine className="contact__option-icon" />,
         option: "Messenger",
         value: "Federico Milone",
         text: lang => STRINGS.SEND_A_MESSAGE[lang],
@@ -56,7 +56,7 @@ const CONTACT_OPTIONS = [
     },
     {
         id: 3,
-        icon: <MdOutlineEmail className="contact__option-icon" />,
+        icon: <BsWhatsapp className="contact__option-icon" />,
         option: "Whatsapp",
         value: "2213080328",
         text: lang => STRINGS.SEND_A_MESSAGE[lang],
@@ -64,4 +64,10 @@ const CONTACT_OPTIONS = [
     }
 ];
 
-export { TOAST_OPTIONS, TOAST_PROMISE_OPTIONS, EMAIL_PROMISE, CONTACT_OPTIONS };
+
+export {
+    TOAST_OPTIONS,
+    TOAST_PROMISE_OPTIONS,
+    EMAIL_PROMISE,
+    CONTACT_OPTIONS
+};

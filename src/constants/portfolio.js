@@ -1,12 +1,20 @@
 import { ICONS } from "./icons";
+import { STRINGS } from "./strings";
+import { FaReact } from "react-icons/fa";
+import { SiMaterialui, SiGooglemaps } from "react-icons/si";
 
-const PORTFOLIO_ITEMS = [
+const PORTFOLIO_ITEMS = lang => [
     {
         id: 1,
         image: ICONS.PORTFOLIO_IMG1,
-        title: "Crypto Currency Dashboard & Financial Visualization",
-        github: "https://github.com",
-        demo: "https://dribble.com/shots/16674715-Crypto-currency-dashboards-and-financial-data-visualization"
+        title: STRINGS.APP_TRAVEL_ADVISOR[lang],
+        github: "https://github.com/fedeemilo/travel-advisor",
+        demo: "https://travel-advisor-steel.vercel.app/",
+        stack: [
+            { name: "React JS", icon: <FaReact /> },
+            { name: "Material UI", icon: <SiMaterialui /> },
+            { name: "Google Maps", icon: <SiGooglemaps /> }
+        ]
     },
     {
         id: 2,

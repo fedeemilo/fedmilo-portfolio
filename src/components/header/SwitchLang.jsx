@@ -1,22 +1,17 @@
-import React, { useContext   } from "react";
+import React, { useContext } from "react";
 import { STRINGS } from "../../constants/strings";
 import { CONTEXT } from "../../core/context";
-import { CHANGE_LANGUAGE } from "../../core/types";
 
 const SwitchLang = () => {
     const {
-        dispatch,
-
-        state: { lang }
+        state: { lang, toggleLanguage }
     } = useContext(CONTEXT);
 
     const handleSwitch = e => {
         const { checked } = e.target;
-
-        dispatch({
-            type: CHANGE_LANGUAGE,
-            payload: checked ? "es" : "en"
-        });
+        const switchLang = checked ? "es" : "en";
+        
+        toggleLanguage(switchLang);
     };
 
     return (

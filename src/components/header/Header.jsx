@@ -8,7 +8,9 @@ import HeaderSocials from "./HeaderSocials";
 import SwitchLang from "./SwitchLang";
 
 const Header = () => {
-    const { state: { lang } } = useContext(CONTEXT);
+    const {
+        state: { lang }
+    } = useContext(CONTEXT);
 
     return (
         <header id="home">
@@ -17,7 +19,7 @@ const Header = () => {
                 <h5>{STRINGS.HELLO_IM[lang]}</h5>
                 <h1>{STRINGS.MY_ALIAS}</h1>
                 <h5 className="text-light">{STRINGS.MY_STACK[lang]}</h5>
-                <CTA lang={lang}  />
+                <CTA lang={lang} />
                 <HeaderSocials />
 
                 <div className="me">

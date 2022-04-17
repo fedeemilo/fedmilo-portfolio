@@ -1,12 +1,12 @@
 import "./testimonials.css";
-import { TESTIMONIALS_ITEMS } from "../../constants/testimonials";
-import { Pagination, Navigation } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { CONTEXT } from "../../core/context";
 import { useContext } from "react";
+import { Pagination, Navigation } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { CONTEXT } from "../../core/context";
 import { STRINGS } from "../../constants/strings";
+import { TESTIMONIALS_ITEMS } from "../../constants/testimonials";
 
 const Testimonials = () => {
     const {

@@ -1,8 +1,5 @@
 import React, { useContext, useRef } from "react";
 import "./contact.css";
-import { MdOutlineEmail } from "react-icons/md";
-import { RiMessageLine } from "react-icons/ri";
-import { BsWhatsapp } from "react-icons/bs";
 import { CONTEXT } from "../../core/context";
 import { STRINGS } from "../../constants/strings";
 import toast from "react-hot-toast";
@@ -12,7 +9,7 @@ import {
     EMAIL_PROMISE,
     CONTACT_OPTIONS
 } from "../../constants/contact";
-import Form from "./Form";
+import Form from "../../common/form/Form";
 
 const Contact = () => {
     const {
@@ -39,16 +36,18 @@ const Contact = () => {
 
             <div className="container contact__container">
                 <div className="contact__options">
-                    {CONTACT_OPTIONS.map(({ id, icon, option, text, href }) => (
-                        <article key={id} className="contact__option">
-                            {icon}
-                            <h4>{option}</h4>
-                            <h5>fedeemilo01@gmail.com</h5>
-                            <a href={href} target="_blank" rel="noreferrer">
-                                {text(lang)}
-                            </a>
-                        </article>
-                    ))}
+                    {CONTACT_OPTIONS.map(
+                        ({ id, icon, option, text, href, value }) => (
+                            <article key={id} className="contact__option">
+                                {icon}
+                                <h4>{option}</h4>
+                                <h5>{value}</h5>
+                                <a href={href} target="_blank" rel="noreferrer">
+                                    {text(lang)}
+                                </a>
+                            </article>
+                        )
+                    )}
                 </div>
 
                 <Form refForm={form} sendEmail={sendEmail} lang={lang} />

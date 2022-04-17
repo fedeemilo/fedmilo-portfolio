@@ -5,7 +5,7 @@ export const language = (state, action) => {
         case ADD_INITIAL_VALUE:
             return {
                 ...state,
-                ...action.value
+                ...action.payload
             };
         case CHANGE_LANGUAGE:
             return {

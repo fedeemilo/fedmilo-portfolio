@@ -3,6 +3,7 @@ import { CONTEXT } from "../../core/context";
 import { PORTFOLIO_ITEMS } from "../../constants/portfolio";
 import { STRINGS } from "../../constants/strings";
 import "./portfolio.css";
+import Tooltip from "../../common/tooltip/Tooltip";
 
 const Portfolio = () => {
     const {
@@ -15,32 +16,42 @@ const Portfolio = () => {
             <h2>{STRINGS.PORTFOLIO[lang]}</h2>
 
             <div className="container portfolio__container">
-                {PORTFOLIO_ITEMS.map(({ id, image, title, github, demo }) => (
-                    <article key={id} className="portfolio__item">
-                        <div className="portfolio__item-image">
-                            <img src={image} alt={title} />
-                        </div>
-                        <h3>{title}</h3>
-                        <div className="portfolio__item-cta">
-                            <a
-                                href={github}
-                                className="btn"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                {STRINGS.GITHUB}
-                            </a>
-                            <a
-                                href={demo}
-                                className="btn btn-primary"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                {STRINGS.LIVE_DEMO[lang]}
-                            </a>
-                        </div>
-                    </article>
-                ))}
+                {PORTFOLIO_ITEMS(lang).map(
+                    ({ id, image, title, github, demo, stack }) => (
+                        <article key={id} className="portfolio__item">
+                            <div className="portfolio__item-image">
+                                <img src={image} alt={title} />
+                            </div>
+                            <h3>{title}</h3>
+                            <div className="portfolio__stack">
+                                {stack?.map(({ icon, name }) => (
+                                    <Tooltip key={name} content={name}>
+                                        {icon}
+                                    </Tooltip>
+                                ))}
+                            </div>
+
+                            <div className="portfolio__item-cta">
+                                <a
+                                    href={github}
+                                    className="btn"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    {STRINGS.GITHUB}
+                                </a>
+                                <a
+                                    href={demo}
+                                    className="btn btn-primary"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    {STRINGS.LIVE_DEMO[lang]}
+                                </a>
+                            </div>
+                        </article>
+                    )
+                )}
             </div>
         </section>
     );
