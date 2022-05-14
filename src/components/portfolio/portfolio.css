@@ -23,7 +23,12 @@
 }
 
 .portfolio__item h3 {
-    margin: 1.2rem 0 2rem;
+    margin: 1rem 0;
+}
+
+.portfolio__item h4 {
+    color: var(--color-light);
+    margin: -1rem 0 1.7rem 0;
 }
 
 .portfolio__item-cta {

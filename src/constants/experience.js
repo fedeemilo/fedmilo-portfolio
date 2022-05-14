@@ -33,7 +33,7 @@ const EXP_CONTENT_FRONTEND = [
     },
     {
         id: 7,
-        title: "BootStrap",
+        title: "Styled Components",
         detail: lang => STRINGS.EXPERIENCED[lang]
     }
 ];

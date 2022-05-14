@@ -7,9 +7,10 @@ export const STRINGS = {
         en: "About Me",
         es: "Sobre Mí"
     },
-    APP_TRAVEL_ADVISOR: {
-        en: "Travel Advisor - App with recommendations for trips in React",
-        es: "Travel Advisor - Aplicación con recomendaciones para viajes en React"
+    APP_TRAVEL_ADVISOR_TITLE: "Travel Advisor",
+    APP_TRAVEL_ADVISOR_SUBTITLE: {
+        en: "Web App with recommendations for trips in React",
+        es: "Aplicación Web con recomendaciones para viajes en React"
     },
     BACKEND: "backend",
     BACKEND_DEV: {

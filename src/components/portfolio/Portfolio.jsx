@@ -17,15 +17,20 @@ const Portfolio = () => {
 
             <div className="container portfolio__container">
                 {PORTFOLIO_ITEMS(lang).map(
-                    ({ id, image, title, github, demo, stack }) => (
+                    ({ id, image, title, subtitle, github, demo, stack }) => (
                         <article key={id} className="portfolio__item">
                             <div className="portfolio__item-image">
                                 <img src={image} alt={title} />
                             </div>
                             <h3>{title}</h3>
+                            <h4>{subtitle}</h4>
                             <div className="portfolio__stack">
                                 {stack?.map(({ icon, name }) => (
-                                    <Tooltip key={name} content={name}>
+                                    <Tooltip
+                                        key={name}
+                                        content={name}
+                                        delay={100}
+                                    >
                                         {icon}
                                     </Tooltip>
                                 ))}
