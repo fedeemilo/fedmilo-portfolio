@@ -32,7 +32,9 @@
 
 .experience__details {
     display: flex;
+    /* justify-content: center; */
     gap: 1rem;
+    width: 100%;
 }
 
 .experience__details-icon {
@@ -45,7 +47,6 @@
 @media screen and (max-width: 1024px) {
     .experience__container {
         grid-template-columns: 1fr;
-
     }
 
     .experience__container > div {

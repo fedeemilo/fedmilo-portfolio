@@ -7,6 +7,10 @@ export const STRINGS = {
         en: "About Me",
         es: "Sobre Mí"
     },
+    APP_CRYPTOLAND_SUBTITLE: {
+        en: "Web portal with cryptocurrency information and news",
+        es: "Portal web con información y noticias sobre criptomonedas"
+    },
     APP_TRAVEL_ADVISOR_TITLE: "Travel Advisor",
     APP_TRAVEL_ADVISOR_SUBTITLE: {
         en: "Web App with recommendations for trips in React",

@@ -1,7 +1,8 @@
 import { ICONS } from "./icons";
 import { STRINGS } from "./strings";
 import { FaReact } from "react-icons/fa";
-import { SiMaterialui, SiGooglemaps } from "react-icons/si";
+import { SiMaterialui, SiGooglemaps, SiRedux } from "react-icons/si";
+import { AiOutlineAntDesign } from "react-icons/ai";
 
 const PORTFOLIO_ITEMS = lang => [
     {
@@ -20,14 +21,14 @@ const PORTFOLIO_ITEMS = lang => [
     {
         id: 2,
         image: ICONS.PORTFOLIO_IMG2,
-        title: "Charts templates & infographics",
-        subtitle: STRINGS.APP_TRAVEL_ADVISOR_SUBTITLE[lang],
-        github: "https://github.com",
-        demo: "https://dribble.com/shots/16580766-Orion-UI-kit-Charts-templates-infographics-in-Figma",
+        title: "Cryptoland",
+        subtitle: STRINGS.APP_CRYPTOLAND_SUBTITLE[lang],
+        github: "https://github.com/fedeemilo/cryptoland",
+        demo: "https://cryptolandd.vercel.app/",
         stack: [
             { name: "React JS", icon: <FaReact /> },
-            { name: "React JS", icon: <FaReact /> },
-            { name: "React JS", icon: <FaReact /> }
+            { name: "Ant Design", icon: <AiOutlineAntDesign /> },
+            { name: "Redux", icon: <SiRedux /> }
         ]
     },
     {
