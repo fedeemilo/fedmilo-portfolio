@@ -2,7 +2,7 @@ import ME from "../assets/me.png";
 import ME_ABOUT from "../assets/me-about.jpg";
 import PORTFOLIO_IMG1 from "../assets/portfolio-traveladvisor.png";
 import PORTFOLIO_IMG2 from "../assets/portfolio2.png";
-import PORTFOLIO_IMG3 from "../assets/portfolio3.jpg";
+import PORTFOLIO_IMG3 from "../assets/portfolio3.png";
 import PORTFOLIO_IMG4 from "../assets/portfolio4.jpg";
 import PORTFOLIO_IMG5 from "../assets/portfolio5.png";
 import PORTFOLIO_IMG6 from "../assets/portfolio6.jpg";

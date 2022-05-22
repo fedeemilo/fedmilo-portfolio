@@ -1,7 +1,13 @@
 import { ICONS } from "./icons";
 import { STRINGS } from "./strings";
 import { FaReact } from "react-icons/fa";
-import { SiMaterialui, SiGooglemaps, SiRedux } from "react-icons/si";
+import {
+    SiMaterialui,
+    SiGooglemaps,
+    SiRedux,
+    SiNextdotjs,
+    SiChakraui
+} from "react-icons/si";
 import { AiOutlineAntDesign } from "react-icons/ai";
 
 const PORTFOLIO_ITEMS = lang => [
@@ -34,14 +40,13 @@ const PORTFOLIO_ITEMS = lang => [
     {
         id: 3,
         image: ICONS.PORTFOLIO_IMG3,
-        title: "Figma dashboard UI kit for data design web apps",
-        subtitle: STRINGS.APP_TRAVEL_ADVISOR_SUBTITLE[lang],
-        github: "https://github.com",
-        demo: "https://dribble.com/shots/17290917-Eclipse-Figma-dashboard-UI-kit-for-data-design-web-apps",
+        title: STRINGS.APP_REALTOR,
+        subtitle: STRINGS.APP_REALTOR_SUBTITLE[lang],
+        github: "https://github.com/fedeemilo/realtor",
+        demo: "https://realtor-rose.vercel.app",
         stack: [
-            { name: "React JS", icon: <FaReact /> },
-            { name: "React JS", icon: <FaReact /> },
-            { name: "React JS", icon: <FaReact /> }
+            { name: "Next JS", icon: <SiNextdotjs /> },
+            { name: "Chakra UI", icon: <SiChakraui /> }
         ]
     },
     {

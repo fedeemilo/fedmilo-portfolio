@@ -11,6 +11,11 @@ export const STRINGS = {
         en: "Web portal with cryptocurrency information and news",
         es: "Portal web con información y noticias sobre criptomonedas"
     },
+    APP_REALTOR: "Realtor",
+    APP_REALTOR_SUBTITLE: {
+        en: "Real estate web app, where you can find a house to rent or buy, built with NextJS",
+        es: "Aplicación web de bienes raices, donde puedes encontrar una casa para rentar o comprar, construida con NextJS"
+    },
     APP_TRAVEL_ADVISOR_TITLE: "Travel Advisor",
     APP_TRAVEL_ADVISOR_SUBTITLE: {
         en: "Web App with recommendations for trips in React",
