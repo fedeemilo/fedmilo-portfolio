@@ -56,10 +56,10 @@ const PORTFOLIO_ITEMS = lang => [
         image: ICONS.PORTFOLIO_IMG4,
         title: 'Codeai',
         subtitle: STRINGS.APP_CODEAI_SUBTITLE[lang],
-        github: 'https://github.com/fedeemilo/codeai',
-        demo: 'https://codeai-mu.vercel.app',
+        github: 'https://github.com/fedeemilo/codeai-react',
+        demo: 'https://codeai-bot.vercel.app',
         stack: [
-            { name: 'Javascript', icon: <DiJavascript1 /> },
+            { name: 'React JS', icon: <FaReact /> },
             { name: 'Openai', icon: <SiOpenai /> }
         ]
     },
