@@ -10,7 +10,6 @@ import {
     SiOpenai
 } from 'react-icons/si'
 import { AiOutlineAntDesign } from 'react-icons/ai'
-import { DiJavascript1 } from 'react-icons/di'
 
 const PORTFOLIO_ITEMS = lang => [
     {

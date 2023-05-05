@@ -92,8 +92,8 @@ export const STRINGS = {
         full: 'Federico Milone'
     },
     FEDMILO_COPYRIGHT: {
-        en: 'fedmilo portfolio. All rights reserved.',
-        es: 'Portfolio de fedmilo. Todos los derechos reservados.'
+        en: 'fedmilo | Portfolio 2023',
+        es: 'fedmilo | Portfolio 2023'
     },
     FORM_ERROR: {
         en: 'There was an error sending the message.',

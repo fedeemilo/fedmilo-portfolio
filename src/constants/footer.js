@@ -1,49 +1,49 @@
-import { STRINGS } from "./strings";
-import { FaFacebookF } from "react-icons/fa";
-import { FiInstagram } from "react-icons/fi";
+import { STRINGS } from './strings'
+import { FiInstagram } from 'react-icons/fi'
+import { RiLinkedinFill } from 'react-icons/ri'
 
 const FOOTER_LINKS = [
     {
-        id: "#",
+        id: '#',
         title: lang => STRINGS.HOME[lang]
     },
     {
-        id: "#about",
+        id: '#about',
         title: lang => STRINGS.ABOUT[lang]
     },
     {
-        id: "#experience",
+        id: '#experience',
         title: lang => STRINGS.EXPERIENCE[lang]
     },
     {
-        id: "#services",
+        id: '#services',
         title: lang => STRINGS.SERVICES[lang]
     },
     {
-        id: "#portfolio",
+        id: '#portfolio',
         title: lang => STRINGS.PORTFOLIO[lang]
     },
     {
-        id: "#testimonials",
+        id: '#testimonials',
         title: lang => STRINGS.TESTIMONIALS[lang]
     },
     {
-        id: "#contact",
+        id: '#contact',
         title: lang => STRINGS.CONTACT[lang]
     }
-];
+]
 
 const FOOTER_SOCIALS = [
     {
-        id: "facebook",
-        url: "https://www.facebook.com/fmilone1/",
-        icon: <FaFacebookF />
+        id: 'linkedin',
+        url: 'https://www.linkedin.com/in/fede-milone/',
+        icon: <RiLinkedinFill />
     },
     {
-        id: "instagram",
-        url: "https://www.instagram.com/fedmilo/",
+        id: 'instagram',
+        url: 'https://www.instagram.com/fedmilo/',
         icon: <FiInstagram />
     }
-];
+]
 
-export { FOOTER_LINKS, FOOTER_SOCIALS };
+export { FOOTER_LINKS, FOOTER_SOCIALS }
