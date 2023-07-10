@@ -2,7 +2,7 @@ import { ICONS } from './icons'
 import { STRINGS } from './strings'
 import { FaReact } from 'react-icons/fa'
 import {
-    SiMaterialui,
+    // SiMaterialui,
     SiGooglemaps,
     SiRedux,
     SiNextdotjs,
@@ -10,6 +10,7 @@ import {
     SiOpenai
 } from 'react-icons/si'
 import { AiOutlineAntDesign } from 'react-icons/ai'
+import { TbBrandThreejs } from 'react-icons/tb'
 
 const PORTFOLIO_ITEMS = lang => [
     {
@@ -21,7 +22,7 @@ const PORTFOLIO_ITEMS = lang => [
         demo: 'https://travel-advisor-steel.vercel.app/',
         stack: [
             { name: 'React JS', icon: <FaReact /> },
-            { name: 'Material UI', icon: <SiMaterialui /> },
+            // { name: 'Material UI', icon: <SiMaterialui /> },
             { name: 'Google Maps', icon: <SiGooglemaps /> }
         ]
     },
@@ -65,29 +66,29 @@ const PORTFOLIO_ITEMS = lang => [
     {
         id: 5,
         image: ICONS.PORTFOLIO_IMG5,
-        title: 'Charts templates & infographics',
-        subtitle: STRINGS.APP_TRAVEL_ADVISOR_SUBTITLE[lang],
-        github: 'https://github.com',
-        demo: 'https://dribble.com/shots/16580766-Orion-UI-kit-Charts-templates-infographics-in-Figma',
+        title: 'Shirts',
+        subtitle: STRINGS.APP_SHIRTS[lang],
+        github: 'https://github.com/fedeemilo/shirts_threejs_ai',
+        demo: 'https://shirts-threejs-ai.vercel.app/',
         stack: [
             { name: 'React JS', icon: <FaReact /> },
-            { name: 'React JS', icon: <FaReact /> },
-            { name: 'React JS', icon: <FaReact /> }
-        ]
-    },
-    {
-        id: 6,
-        image: ICONS.PORTFOLIO_IMG6,
-        title: 'Charts templates & infographics',
-        subtitle: STRINGS.APP_TRAVEL_ADVISOR_SUBTITLE[lang],
-        github: 'https://github.com',
-        demo: 'https://dribble.com/shots/16674715-Crypto-currency-dashboards-and-financial-data-visualization',
-        stack: [
-            { name: 'React JS', icon: <FaReact /> },
-            { name: 'React JS', icon: <FaReact /> },
-            { name: 'React JS', icon: <FaReact /> }
+            { name: 'Three JS', icon: <TbBrandThreejs /> },
+            { name: 'Openai', icon: <SiOpenai /> }
         ]
     }
+    // {
+    //     id: 6,
+    //     image: ICONS.PORTFOLIO_IMG6,
+    //     title: 'Charts templates & infographics',
+    //     subtitle: STRINGS.APP_TRAVEL_ADVISOR_SUBTITLE[lang],
+    //     github: 'https://github.com',
+    //     demo: 'https://dribble.com/shots/16674715-Crypto-currency-dashboards-and-financial-data-visualization',
+    //     stack: [
+    //         { name: 'React JS', icon: <FaReact /> },
+    //         { name: 'React JS', icon: <FaReact /> },
+    //         { name: 'React JS', icon: <FaReact /> }
+    //     ]
+    // }
 ]
 
 export { PORTFOLIO_ITEMS }

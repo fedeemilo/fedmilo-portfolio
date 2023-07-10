@@ -39,42 +39,6 @@ const TESTIMONIALS_ITEMS = [
                  además siempre busca aportar formas mejoradas de hacer las cosas usando 
                  practicas sólidas y patrones de diseños.`
         }
-    },
-    {
-        avatar: AVTR3,
-        name: 'Kwame Despite',
-        role: {
-            en: '',
-            es: ''
-        },
-        review: {
-            en: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                 Rem consequuntur suscipit, numquam accusantium fugiat quia 
-                 veritatis sint nesciunt est laboriosam. Accusantium, vero. 
-                 Sequi quos neque incidunt dolore harum quisquam nemo.`,
-            es: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                 Rem consequuntur suscipit, numquam accusantium fugiat quia 
-                 veritatis sint nesciunt est laboriosam. Accusantium, vero. 
-                 Sequi quos neque incidunt dolore harum quisquam nemo.`
-        }
-    },
-    {
-        avatar: AVTR4,
-        name: 'Nana Ama McBrown',
-        role: {
-            en: '',
-            es: ''
-        },
-        review: {
-            en: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                 Rem consequuntur suscipit, numquam accusantium fugiat quia 
-                 veritatis sint nesciunt est laboriosam. Accusantium, vero. 
-                 Sequi quos neque incidunt dolore harum quisquam nemo.`,
-            es: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                 Rem consequuntur suscipit, numquam accusantium fugiat quia 
-                 veritatis sint nesciunt est laboriosam. Accusantium, vero. 
-                 Sequi quos neque incidunt dolore harum quisquam nemo.`
-        }
     }
 ]
 

@@ -26,6 +26,14 @@ export const STRINGS = {
         en: 'Web App with recommendations for trips in React',
         es: 'Aplicación Web con recomendaciones para viajes en React'
     },
+    APP_SHIRTS: {
+        en: `A web app that allows you to edit a 3D-modeled t-shirt using Three.js.
+            Modify the color, add logos, or change the texture. Unleash your creativity by generating logo designs or
+            unique textures with the help of OpenAI.`,
+        es: `Aplicación Web  que te permite editar una remera modelada en 3D utilizando 
+             Three.js. Modifica el color, agrega logos o cambia la textura. Desata tu creatividad generando diseños de 
+             logos o texturas únicas con la ayuda de OpenAI.`
+    },
     BACKEND: 'backend',
     BACKEND_DEV: {
         en: 'Backend Development',
@@ -147,8 +155,8 @@ export const STRINGS = {
         es: 'Mi Experiencia'
     },
     MY_RECENT_WORK: {
-        en: 'My Recent Work (In Construction...)',
-        es: 'Mi Trabajo Reciente (En Construcción...)'
+        en: 'My Recent Work',
+        es: 'Mi Trabajo Reciente'
     },
     MY_STACK: {
         en: 'Fullstack Web Developer',
@@ -171,8 +179,8 @@ export const STRINGS = {
         es: 'Proyectos'
     },
     REVIEWS_FROM: {
-        en: 'Reviews From Colleagues & Clients (In Construction...)',
-        es: 'Comentarios De Colegas Y Clientes (En Construcción...)'
+        en: 'Reviews From Colleagues & Clients',
+        es: 'Comentarios De Colegas Y Clientes'
     },
     SCROLL_DOWN: {
         en: 'Scroll Down',
