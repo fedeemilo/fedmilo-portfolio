@@ -1,33 +1,33 @@
-import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
-import { BiBook, BiMessageSquareDetail } from "react-icons/bi";
-import { RiServiceLine } from "react-icons/ri";
+import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai'
+import { BiBook, BiMessageSquareDetail } from 'react-icons/bi'
+import { RiServiceLine } from 'react-icons/ri'
 import { BsBriefcase } from 'react-icons/bs'
 
 const NAV_ITEMS = [
     {
-        id: "#home",
+        id: '#header',
         children: <AiOutlineHome />
     },
     {
-        id: "#about",
+        id: '#about',
         children: <AiOutlineUser />
     },
     {
-        id: "#experience",
+        id: '#experience',
         children: <BiBook />
     },
     {
-        id: "#services",
+        id: '#services',
         children: <RiServiceLine />
     },
     {
-        id: "#portfolio",
+        id: '#portfolio',
         children: <BsBriefcase />
     },
     {
-        id: "#contact",
+        id: '#contact',
         children: <BiMessageSquareDetail />
     }
-];
+]
 
-export { NAV_ITEMS };
+export { NAV_ITEMS }

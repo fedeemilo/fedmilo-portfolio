@@ -1,19 +1,19 @@
-import { useContext } from "react";
-import { STRINGS } from "../../constants/strings";
-import { ICONS } from "../../constants/icons";
-import { CONTEXT } from "../../core/context";
-import CTA from "./CTA";
-import "./header.css";
-import HeaderSocials from "./HeaderSocials";
-import SwitchLang from "./SwitchLang";
+import { useContext } from 'react'
+import { STRINGS } from '../../constants/strings'
+import { ICONS } from '../../constants/icons'
+import { CONTEXT } from '../../core/context'
+import CTA from './CTA'
+import './header.css'
+import HeaderSocials from './HeaderSocials'
+import SwitchLang from './SwitchLang'
 
 const Header = () => {
     const {
         state: { lang }
-    } = useContext(CONTEXT);
+    } = useContext(CONTEXT)
 
     return (
-        <header id="home">
+        <header id="header">
             <SwitchLang />
             <div className="container header__container">
                 <h5>{STRINGS.HELLO_IM[lang]}</h5>
@@ -31,7 +31,7 @@ const Header = () => {
                 </a>
             </div>
         </header>
-    );
-};
+    )
+}
 
-export default Header;
+export default Header
