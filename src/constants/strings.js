@@ -26,6 +26,11 @@ export const STRINGS = {
         en: 'Web App with recommendations for trips in React',
         es: 'Aplicación Web con recomendaciones para viajes en React'
     },
+    APP_MAMOVIES: 'Mamovies',
+    APP_MAMOVIES_SUBTITLE: {
+        en: 'Web app for streaming movies, built with React and Redux',
+        es: 'Aplicación web para streaming de películas, construida con React y Redux'
+    },
     APP_SHIRTS: {
         en: `A web app that allows you to edit a 3D-modeled t-shirt using Three.js.
             Modify the color, add logos, or change the texture. Unleash your creativity by generating logo designs or

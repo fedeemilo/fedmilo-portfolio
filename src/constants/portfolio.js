@@ -75,20 +75,18 @@ const PORTFOLIO_ITEMS = lang => [
             { name: 'Three JS', icon: <TbBrandThreejs /> },
             { name: 'Openai', icon: <SiOpenai /> }
         ]
+    },
+    {
+        id: 6,
+        image: ICONS.PORTFOLIO_IMG7,
+        title: 'Mamovies',
+        subtitle: STRINGS.APP_MAMOVIES_SUBTITLE[lang],
+        demo: 'https://mamovies.io',
+        stack: [
+            { name: 'React JS', icon: <FaReact /> },
+            { name: 'Chakra UI', icon: <SiChakraui /> }
+        ]
     }
-    // {
-    //     id: 6,
-    //     image: ICONS.PORTFOLIO_IMG6,
-    //     title: 'Charts templates & infographics',
-    //     subtitle: STRINGS.APP_TRAVEL_ADVISOR_SUBTITLE[lang],
-    //     github: 'https://github.com',
-    //     demo: 'https://dribble.com/shots/16674715-Crypto-currency-dashboards-and-financial-data-visualization',
-    //     stack: [
-    //         { name: 'React JS', icon: <FaReact /> },
-    //         { name: 'React JS', icon: <FaReact /> },
-    //         { name: 'React JS', icon: <FaReact /> }
-    //     ]
-    // }
 ]
 
 export { PORTFOLIO_ITEMS }

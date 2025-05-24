@@ -1,14 +1,14 @@
-import { useContext } from "react";
-import { CONTEXT } from "../../core/context";
-import { PORTFOLIO_ITEMS } from "../../constants/portfolio";
-import { STRINGS } from "../../constants/strings";
-import "./portfolio.css";
-import Tooltip from "../../common/tooltip/Tooltip";
+import { useContext } from 'react'
+import { CONTEXT } from '../../core/context'
+import { PORTFOLIO_ITEMS } from '../../constants/portfolio'
+import { STRINGS } from '../../constants/strings'
+import './portfolio.css'
+import Tooltip from '../../common/tooltip/Tooltip'
 
 const Portfolio = () => {
     const {
         state: { lang }
-    } = useContext(CONTEXT);
+    } = useContext(CONTEXT)
 
     return (
         <section id="portfolio">
@@ -26,25 +26,23 @@ const Portfolio = () => {
                             <h4>{subtitle}</h4>
                             <div className="portfolio__stack">
                                 {stack?.map(({ icon, name }) => (
-                                    <Tooltip
-                                        key={name}
-                                        content={name}
-                                        delay={100}
-                                    >
+                                    <Tooltip key={name} content={name} delay={100}>
                                         {icon}
                                     </Tooltip>
                                 ))}
                             </div>
 
                             <div className="portfolio__item-cta">
-                                <a
-                                    href={github}
-                                    className="btn"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    {STRINGS.GITHUB}
-                                </a>
+                                {github && (
+                                    <a
+                                        href={github}
+                                        className="btn"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        {STRINGS.GITHUB}
+                                    </a>
+                                )}
                                 <a
                                     href={demo}
                                     className="btn btn-primary"
@@ -59,7 +57,7 @@ const Portfolio = () => {
                 )}
             </div>
         </section>
-    );
-};
+    )
+}
 
-export default Portfolio;
+export default Portfolio
