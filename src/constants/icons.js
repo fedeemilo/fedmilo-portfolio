@@ -1,5 +1,5 @@
 import ME from '../assets/me.png'
-import ME_ABOUT from '../assets/me-about.jpg'
+import ME_ABOUT from '../assets/me-about.png'
 import PORTFOLIO_IMG1 from '../assets/portfolio-traveladvisor.png'
 import PORTFOLIO_IMG2 from '../assets/portfolio-cryptoland.png'
 import PORTFOLIO_IMG3 from '../assets/portfolio-realtor.png'
