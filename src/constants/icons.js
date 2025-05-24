@@ -7,6 +7,7 @@ import PORTFOLIO_IMG4 from '../assets/portfolio-codeai.png'
 import PORTFOLIO_IMG5 from '../assets/portfolio-tshirts.png'
 import PORTFOLIO_IMG6 from '../assets/portfolio6.jpg'
 import PORTFOLIO_IMG7 from '../assets/portfolio7.png'
+import PORTFOLIO_IMG8 from '../assets/portfolio8.png'
 
 export const ICONS = {
     ME,
@@ -17,5 +18,6 @@ export const ICONS = {
     PORTFOLIO_IMG4,
     PORTFOLIO_IMG5,
     PORTFOLIO_IMG6,
-    PORTFOLIO_IMG7
+    PORTFOLIO_IMG7,
+    PORTFOLIO_IMG8
 }

@@ -12,6 +12,11 @@ export const STRINGS = {
         en: 'Interface that resembles the ChatGPT app, communication with advanced GPT3 model API',
         es: 'Interfaz que se asemeja a la aplicación ChatGPT, comunicación con API modelo GPT3 avanzada'
     },
+    APP_CODEFIX: 'CodeFix',
+    APP_CODEFIX_SUBTITLE: {
+        en: 'Paste any error and get intelligent debugging suggestions powered by AI',
+        es: 'Pegá cualquier error y obtené sugerencias inteligentes para depurarlo con ayuda de IA'
+    },
     APP_CRYPTOLAND_SUBTITLE: {
         en: 'Web portal with cryptocurrency information and news',
         es: 'Portal web con información y noticias sobre criptomonedas'

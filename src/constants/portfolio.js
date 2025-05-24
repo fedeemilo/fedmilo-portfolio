@@ -86,6 +86,19 @@ const PORTFOLIO_ITEMS = lang => [
             { name: 'React JS', icon: <FaReact /> },
             { name: 'Chakra UI', icon: <SiChakraui /> }
         ]
+    },
+    {
+        id: 7,
+        image: ICONS.PORTFOLIO_IMG8,
+        title: STRINGS.APP_CODEFIX,
+        subtitle: STRINGS.APP_CODEFIX_SUBTITLE[lang],
+        github: 'https://github.com/fedeemilo/codefix',
+        demo: 'https://codefix-eight.vercel.app',
+        stack: [
+            { name: 'React JS', icon: <FaReact /> },
+            { name: 'Openai', icon: <SiOpenai /> },
+            { name: 'Chakra UI', icon: <SiChakraui /> }
+        ]
     }
 ]
 
