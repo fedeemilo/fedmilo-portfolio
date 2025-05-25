@@ -1,3 +1,5 @@
+import FLAG_ES from '../assets/flag-es.svg'
+import FLAG_EN from '../assets/flag-en.svg'
 import ME from '../assets/me.png'
 import ME_WEBP from '../assets/me.webp'
 import ME_ABOUT from '../assets/me-about.png'
@@ -18,6 +20,8 @@ import PORTFOLIO_CODEFIX from '../assets/portfolio8.png'
 import PORTFOLIO_CODEFIX_WEBP from '../assets/portfolio8.webp'
 
 export const ICONS = {
+    FLAG_ES,
+    FLAG_EN,
     ME,
     ME_WEBP,
     ME_ABOUT,

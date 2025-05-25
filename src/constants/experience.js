@@ -13,7 +13,8 @@ import {
     SiPython,
     SiGraphql,
     SiNestjs,
-    SiNextdotjs
+    SiNextdotjs,
+    SiPostgresql
 } from 'react-icons/si'
 import { FaAws } from 'react-icons/fa'
 
@@ -59,6 +60,12 @@ const EXP_CONTENT_FRONTEND = [
         title: 'Styled Components',
         detail: lang => STRINGS.EXPERIENCED[lang],
         icon: <SiStyledcomponents />
+    },
+    {
+        id: 8,
+        title: 'Bootstrap',
+        detail: lang => STRINGS.EXPERIENCED[lang],
+        icon: <SiBootstrap />
     }
 ]
 
@@ -102,8 +109,14 @@ const EXP_CONTENT_BACKEND = [
     {
         id: 7,
         title: 'GraphQL',
-        detail: lang => STRINGS.INTERMEDIATE[lang],
+        detail: lang => STRINGS.EXPERIENCED[lang],
         icon: <SiGraphql />
+    },
+    {
+        id: 8,
+        title: 'PostgreSQL',
+        detail: lang => STRINGS.BASIC[lang],
+        icon: <SiPostgresql />
     }
 ]
 const EXP_CONTAINER = [

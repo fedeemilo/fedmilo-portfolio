@@ -30,7 +30,7 @@ header {
 }
 
 .header__socials::after {
-    content: "";
+    content: '';
     width: 1px;
     height: 2rem;
     background: var(--color-primary);
@@ -63,10 +63,82 @@ header {
 
 .switch__language {
     display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.95rem;
+    color: var(--color-light);
+    user-select: none;
+    position: fixed;
+    top: 1.5rem;
+    left: 1.5rem;
+    z-index: 10;
+}
+
+.switch__language span {
+    color: var(--color-light);
+    transition: color 0.3s ease;
+}
+
+.switch__language .active {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
     position: absolute;
-    left: 2rem;
-    top: 1rem;
-    width: 11.7rem;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+    border-radius: 34px;
+    transition: 0.4s;
+}
+
+.slider::before {
+    position: absolute;
+    content: '';
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.switch input:checked + .slider {
+    background-color: var(--color-primary);
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(18px);
+}
+
+.lang-flag {
+    width: 22px;
+    height: auto;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.lang-flag.active {
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 .en,
@@ -93,7 +165,7 @@ header {
 }
 
 .check:before {
-    content: "";
+    content: '';
     position: absolute;
     width: 50px;
     height: 25px;
@@ -107,7 +179,7 @@ header {
 }
 
 .check:after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0px;
     width: 25px;
@@ -125,27 +197,14 @@ header {
 }
 
 /* ======================= MEDIA QUERIES (MEDIUM DEVICES) ======================= */
-
 @media screen and (max-width: 1024px) {
     header {
         height: 100vh;
     }
 
-    .switch__language {
-        display: flex;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .en {
-        margin-right: 1rem;
-    }
-
-    .es {
-        margin-left: 4rem;
+    .header__socials,
+    .scroll__down {
+        display: none;
     }
 }
 
@@ -158,22 +217,5 @@ header {
     .header__socials,
     .scroll__down {
         display: none;
-    }
-
-    .switch__language {
-        display: flex;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .en {
-        margin-right: 1rem;
-    }
-
-    .es {
-        margin-left: 4rem;
     }
 }

@@ -1,30 +1,34 @@
-import React, { useContext } from "react";
-import { STRINGS } from "../../constants/strings";
-import { CONTEXT } from "../../core/context";
+import { useContext } from 'react'
+import { CONTEXT } from '../../core/context'
+import { ICONS } from '../../constants/icons'
 
 const SwitchLang = () => {
     const {
         state: { lang, toggleLanguage }
-    } = useContext(CONTEXT);
+    } = useContext(CONTEXT)
 
-    const handleSwitch = e => {
-        const { checked } = e.target;
-        const switchLang = checked ? "es" : "en";
-        
-        toggleLanguage(switchLang);
-    };
+    const handleSwitch = () => {
+        toggleLanguage(lang === 'en' ? 'es' : 'en')
+    }
 
     return (
         <div className="switch__language">
-            <span className={lang === "en" ? "en active__lang" : "en"}>
-                {STRINGS.ENGLISH[lang]}
-            </span>
-            <input type="checkbox" className="check" onChange={handleSwitch} />
-            <span className={lang === "es" ? "es active__lang" : "es"}>
-                {STRINGS.SPANISH[lang]}
-            </span>
+            <img
+                src={ICONS.FLAG_EN}
+                alt="English"
+                className={`lang-flag ${lang === 'en' ? 'active' : ''}`}
+            />
+            <label className="switch">
+                <input type="checkbox" onChange={handleSwitch} checked={lang === 'es'} />
+                <span className="slider"></span>
+            </label>
+            <img
+                src={ICONS.FLAG_ES}
+                alt="Español"
+                className={`lang-flag ${lang === 'es' ? 'active' : ''}`}
+            />
         </div>
-    );
-};
+    )
+}
 
-export default SwitchLang;
+export default SwitchLang
