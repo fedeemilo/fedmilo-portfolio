@@ -265,8 +265,8 @@ export const STRINGS = {
         es: '20+ En Todo El Mundo'
     },
     YEARS_WORKING: {
-        en: '3+ Years Working',
-        es: '3+ Años Trabajando'
+        en: '5+ Years Working',
+        es: '5+ Años Trabajando'
     },
     YOUR_EMAIL: {
         en: 'Your Email',
