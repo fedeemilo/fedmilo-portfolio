@@ -2,34 +2,34 @@
 
 Bienvenido a mi portfolio personal de desarrollo web. Este sitio reúne algunos de mis proyectos más recientes, desarrollados con tecnologías modernas como React, Next.js, Three.js, OpenAI, Chakra UI y más.
 
-🔗 **Live site:** [https://fedmilo-portfolio.vercel.app](https://fedmilo-portfolio.vercel.app)
+🔗 **Live site:** [https://fedmilo.com](https://fedmilo.com)
 
 ---
 
 ## 🧰 Tecnologías utilizadas
 
--   React JS
--   Next JS
--   Chakra UI
--   Redux
--   Ant Design
--   Google Maps API
--   OpenAI API
--   Three.js
--   Vercel (deploy)
--   GitHub
+- React JS
+- Next JS
+- Chakra UI
+- Redux
+- Ant Design
+- Google Maps API
+- OpenAI API
+- Three.js
+- Vercel (deploy)
+- GitHub
 
 ---
 
 ## 📁 Secciones del Portfolio
 
--   **🏠 Home:** Presentación y bienvenida.
--   **👨‍💻 About:** Un poco sobre mí.
--   **📈 Experience:** Experiencia laboral y conocimientos.
--   **🛠️ Services:** Servicios que ofrezco como desarrollador.
--   **🗂️ Portfolio:** Lista de proyectos destacados.
--   **💬 Testimonials:** Opiniones de personas con las que trabajé.
--   **📬 Contact:** Formulario para contactarme.
+- **🏠 Home:** Presentación y bienvenida.
+- **👨‍💻 About:** Un poco sobre mí.
+- **📈 Experience:** Experiencia laboral y conocimientos.
+- **🛠️ Services:** Servicios que ofrezco como desarrollador.
+- **🗂️ Portfolio:** Lista de proyectos destacados.
+- **💬 Testimonials:** Opiniones de personas con las que trabajé.
+- **📬 Contact:** Formulario para contactarme.
 
 ---
 
