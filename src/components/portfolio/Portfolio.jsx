@@ -18,7 +18,17 @@ const Portfolio = () => {
 
             <div className="container portfolio__container">
                 {PORTFOLIO_ITEMS(lang).map(
-                    ({ id, image, imageWebp, title, subtitle, github, demo, stack }) => (
+                    ({
+                        id,
+                        image,
+                        imageWebp,
+                        title,
+                        subtitle,
+                        github,
+                        demo,
+                        stack,
+                        requestAccess
+                    }) => (
                         <article key={id} className="portfolio__item">
                             <div className="portfolio__item-image">
                                 <OptimizedImage
@@ -57,6 +67,18 @@ const Portfolio = () => {
                                 >
                                     {STRINGS.LIVE_DEMO[lang]}
                                 </a>
+                                {requestAccess && (
+                                    <a
+                                        href="#contact"
+                                        className="btn"
+                                        style={{
+                                            backgroundColor: 'transparent',
+                                            border: '1px solid var(--color-primary-variant)'
+                                        }}
+                                    >
+                                        {STRINGS.REQUEST_ACCESS[lang]}
+                                    </a>
+                                )}
                             </div>
                         </article>
                     )

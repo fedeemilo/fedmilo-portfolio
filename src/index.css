@@ -131,6 +131,7 @@ a:hover {
     backdrop-filter: blur(6px);
     transition: all 300ms ease;
     box-shadow: 0 0 8px rgba(77, 181, 255, 0.1);
+    cursor: pointer;
 }
 
 .btn:hover {

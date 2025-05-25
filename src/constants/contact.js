@@ -1,10 +1,13 @@
-import emailjs from 'emailjs-com'
+import emailjs from '@emailjs/browser'
 import { STRINGS } from './strings'
 import { MdOutlineEmail } from 'react-icons/md'
 import { FiInstagram } from 'react-icons/fi'
 
-const EMAIL_PROMISE = form =>
-    emailjs.sendForm('service_8rskees', 'template_jgp6fog', form.current, '_m5_aiiADdy809JFg')
+emailjs.init({
+    publicKey: 'srwkCwESJej1eocvA'
+})
+
+const EMAIL_PROMISE = form => emailjs.sendForm('service_egvb4pf', 'template_aer2h1b', form.current)
 
 const TOAST_PROMISE_OPTIONS = lang => ({
     loading: STRINGS.LOADING[lang],

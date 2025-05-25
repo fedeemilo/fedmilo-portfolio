@@ -188,6 +188,10 @@ export const STRINGS = {
         en: 'Projects',
         es: 'Proyectos'
     },
+    REQUEST_ACCESS: {
+        en: 'Request Access',
+        es: 'Solicitar Acceso'
+    },
     REVIEWS_FROM: {
         en: 'Reviews From Colleagues & Clients',
         es: 'Comentarios De Colegas Y Clientes'

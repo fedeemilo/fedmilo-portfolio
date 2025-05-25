@@ -11,11 +11,15 @@
     padding: 1.5rem;
     border: 1px solid var(--color-primary-variant);
     box-shadow: 0 0 14px rgba(34, 211, 238, 0.05);
-    transition: var(--transition);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     backdrop-filter: blur(8px);
+    will-change: transform;
 }
 
 .portfolio__item:hover {
@@ -32,8 +36,8 @@
 }
 
 .portfolio__item-image img {
-    transition: transform 0.3s ease;
-    border-radius: 1rem;
+    transition: transform 0.25s ease;
+    will-change: transform;
 }
 
 .portfolio__item:hover .portfolio__item-image img {

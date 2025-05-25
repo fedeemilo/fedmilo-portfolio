@@ -87,6 +87,7 @@ const PORTFOLIO_ITEMS = lang => [
         title: 'Mamovies',
         subtitle: STRINGS.APP_MAMOVIES_SUBTITLE[lang],
         demo: 'https://mamovies.io',
+        requestAccess: true,
         stack: [
             { name: 'React JS', icon: <FaReact /> },
             { name: 'Chakra UI', icon: <SiChakraui /> }
