@@ -123,3 +123,17 @@
         padding: 1rem 1.2rem;
     }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
+    .about__me {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto 3rem;
+    }
+
+    .about__me-image {
+        width: 100%;
+        max-width: 350px;
+        transform: none;
+    }
+}
