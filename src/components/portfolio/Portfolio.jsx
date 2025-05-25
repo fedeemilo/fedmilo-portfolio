@@ -16,7 +16,7 @@ const Portfolio = () => {
             <h5>{STRINGS.MY_RECENT_WORK[lang]}</h5>
             <h2>{STRINGS.PORTFOLIO[lang]}</h2>
 
-            <div className="container portfolio__container">
+            <div className="portfolio__container">
                 {PORTFOLIO_ITEMS(lang).map(
                     ({
                         id,

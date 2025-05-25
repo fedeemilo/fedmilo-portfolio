@@ -64,7 +64,7 @@ header {
     display: flex;
     align-items: center;
     gap: 0.7rem;
-    position: fixed;
+    position: absolute;
     top: 1.5rem;
     left: 1.5rem;
     z-index: 10;

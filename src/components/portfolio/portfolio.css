@@ -3,6 +3,11 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
     justify-items: center;
+    align-items: stretch;
+
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
 }
 
 .portfolio__item {
@@ -20,6 +25,7 @@
     justify-content: space-between;
     backdrop-filter: blur(8px);
     will-change: transform;
+    height: 100%;
 }
 
 .portfolio__item:hover {
@@ -103,5 +109,12 @@
     .portfolio__container {
         grid-template-columns: 1fr;
         gap: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .portfolio__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
     }
 }
