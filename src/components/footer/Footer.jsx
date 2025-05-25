@@ -1,17 +1,17 @@
-import "./footer.css";
-import { useContext } from "react";
-import { STRINGS } from "../../constants/strings";
-import { CONTEXT } from "../../core/context";
-import { FOOTER_LINKS, FOOTER_SOCIALS } from "../../constants/footer";
+import './footer.css'
+import { useContext } from 'react'
+import { STRINGS } from '../../constants/strings'
+import { CONTEXT } from '../../core/context'
+import { FOOTER_LINKS, FOOTER_SOCIALS } from '../../constants/footer'
 
 const Footer = () => {
     const {
         state: { lang }
-    } = useContext(CONTEXT);
+    } = useContext(CONTEXT)
 
     return (
-        <footer>
-            <a href="#" className="footer__logo">
+        <footer id="footer">
+            <a href="#header" className="footer__logo">
                 {STRINGS.FEDMILO.alias}
             </a>
 
@@ -35,7 +35,7 @@ const Footer = () => {
                 <small>&copy; {STRINGS.FEDMILO_COPYRIGHT[lang]}</small>
             </div>
         </footer>
-    );
-};
+    )
+}
 
-export default Footer;
+export default Footer

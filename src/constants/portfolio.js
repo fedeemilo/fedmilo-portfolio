@@ -22,7 +22,6 @@ const PORTFOLIO_ITEMS = lang => [
         demo: 'https://travel-advisor-steel.vercel.app/',
         stack: [
             { name: 'React JS', icon: <FaReact /> },
-            // { name: 'Material UI', icon: <SiMaterialui /> },
             { name: 'Google Maps', icon: <SiGooglemaps /> }
         ]
     },

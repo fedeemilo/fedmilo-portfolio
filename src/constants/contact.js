@@ -1,6 +1,7 @@
 import emailjs from 'emailjs-com'
 import { STRINGS } from './strings'
 import { MdOutlineEmail } from 'react-icons/md'
+import { FiInstagram } from 'react-icons/fi'
 
 const EMAIL_PROMISE = form =>
     emailjs.sendForm('service_8rskees', 'template_jgp6fog', form.current, '_m5_aiiADdy809JFg')
@@ -14,19 +15,34 @@ const TOAST_PROMISE_OPTIONS = lang => ({
 const TOAST_OPTIONS = {
     style: {
         minWidth: '8rem',
-        backgroundColor: '#2c2c6c',
-        color: '#fff'
+        backgroundColor: '#1c1c2e',
+        color: '#ffffff'
     },
     position: 'top-right',
     duration: 4000,
     success: {
-        icon: '✅'
+        icon: '✅',
+        style: {
+            border: '1px solid #22d3ee',
+            backgroundColor: '#0f0f1a',
+            color: '#22d3ee'
+        }
     },
     error: {
-        icon: '❌'
+        icon: '❌',
+        style: {
+            border: '1px solid #ff4d4f',
+            backgroundColor: '#1c1c2e',
+            color: '#ff4d4f'
+        }
     },
     loading: {
-        icon: '🕜'
+        icon: '🕜',
+        style: {
+            border: '1px solid rgba(34, 211, 238, 0.4)',
+            backgroundColor: '#1c1c2e',
+            color: '#ffffff'
+        }
     }
 }
 
@@ -38,6 +54,14 @@ const CONTACT_OPTIONS = [
         value: 'fedmilo91@gmail.com',
         text: lang => STRINGS.SEND_A_MESSAGE[lang],
         href: 'mailto:fedmilo91@gmail.com'
+    },
+    {
+        id: 2,
+        icon: <FiInstagram className="contact__option-icon" />,
+        option: 'Instagram',
+        value: '@fedmilo',
+        text: lang => STRINGS.SEND_A_MESSAGE[lang],
+        href: 'https://www.instagram.com/fedmilo'
     }
 ]
 

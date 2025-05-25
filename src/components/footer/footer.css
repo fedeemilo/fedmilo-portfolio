@@ -1,58 +1,72 @@
 footer {
-    background: var(--color-primary);
-    padding: 3rem 0;
+    background: linear-gradient(180deg, var(--color-primary) 0%, #1cd9f6 100%);
+    padding: 3.5rem 0 1rem;
     text-align: center;
-    font-size: 0.9rem;
-    margin-top: 0.7rem;
+    color: var(--color-bg);
+    margin-top: 2rem;
 }
 
 footer a {
     color: var(--color-bg);
+    transition: var(--transition);
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .footer__logo {
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 2.2rem;
     display: block;
+    letter-spacing: 1px;
 }
 
 .permalinks {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 2.2rem;
     margin: 0 auto 3rem;
+}
+
+.permalinks a:hover {
+    color: var(--color-white);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .footer__socials {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    margin-bottom: 4rem;
+    gap: 1.2rem;
+    margin-bottom: 3rem;
 }
 
 .footer__socials a {
     background: var(--color-bg);
-    color: var(--color-white);
+    color: var(--color-primary);
     padding: 0.8rem;
     border-radius: 0.7rem;
     display: flex;
+    font-size: 1.1rem;
+    transition: var(--transition);
     border: 1px solid transparent;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
 }
 
 .footer__socials a:hover {
-    background: transparent;
+    background: var(--color-white);
     color: var(--color-bg);
-    border-color: var(--color-bg);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+    transform: scale(1.1);
 }
 
 .footer__copyright {
-    margin-bottom: 4rem;
+    font-size: 0.95rem;
     color: var(--color-bg);
+    opacity: 0.85;
 }
 
-/* ======================= MEDIA QUERIES (SMALL DEVICES) ======================= */
+/* Responsive */
 @media screen and (max-width: 600px) {
     .permalinks {
         flex-direction: column;
@@ -60,6 +74,10 @@ footer a {
     }
 
     .footer__socials {
-        margin-bottom: 2.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer__logo {
+        font-size: 2rem;
     }
 }

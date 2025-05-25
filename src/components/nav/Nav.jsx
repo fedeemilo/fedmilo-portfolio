@@ -4,11 +4,13 @@ import { NAV_ITEMS } from '../../constants/nav'
 
 const Nav = () => {
     const [activeNav, setActiveNav] = useState('#')
+    const [isFooterVisible, setIsFooterVisible] = useState(false)
 
     useEffect(() => {
         const sections = document.querySelectorAll('[id]')
+        const footer = document.getElementById('footer')
 
-        const observer = new IntersectionObserver(
+        const sectionObserver = new IntersectionObserver(
             entries => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -16,22 +18,25 @@ const Nav = () => {
                     }
                 })
             },
-            {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.3
-            }
+            { root: null, threshold: 0.2 }
         )
 
-        sections.forEach(section => observer.observe(section))
+        const footerObserver = new IntersectionObserver(
+            ([entry]) => setIsFooterVisible(entry.isIntersecting),
+            { threshold: 0.2 }
+        )
+
+        sections.forEach(section => sectionObserver.observe(section))
+        if (footer) footerObserver.observe(footer)
 
         return () => {
-            sections.forEach(section => observer.unobserve(section))
+            sections.forEach(section => sectionObserver.unobserve(section))
+            if (footer) footerObserver.unobserve(footer)
         }
     }, [])
 
     return (
-        <nav>
+        <nav className={`nav__container ${isFooterVisible ? 'nav--hidden' : ''}`}>
             {NAV_ITEMS.map(({ id, children }) => (
                 <a
                     key={id}
