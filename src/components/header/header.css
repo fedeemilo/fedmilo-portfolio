@@ -60,34 +60,37 @@ header {
 }
 
 /* ======================= SWITCH LANGUAGE ======================= */
-
 .switch__language {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    font-size: 0.95rem;
-    color: var(--color-light);
-    user-select: none;
+    gap: 1.2rem;
     position: fixed;
     top: 1.5rem;
     left: 1.5rem;
     z-index: 10;
+    user-select: none;
 }
 
-.switch__language span {
-    color: var(--color-light);
-    transition: color 0.3s ease;
+.lang-flag {
+    width: 26px;
+    height: auto;
+    opacity: 0.6;
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+    filter: drop-shadow(0 0 1px #00000066);
 }
 
-.switch__language .active {
-    color: var(--color-primary);
-    font-weight: 600;
+.lang-flag.active {
+    opacity: 1;
+    transform: scale(1.05);
 }
 
+/* Switch Styles */
 .switch {
     position: relative;
     display: inline-block;
-    width: 42px;
+    width: 44px;
     height: 24px;
 }
 
@@ -126,77 +129,10 @@ header {
 }
 
 .switch input:checked + .slider::before {
-    transform: translateX(18px);
+    transform: translateX(20px);
 }
 
-.lang-flag {
-    width: 22px;
-    height: auto;
-    opacity: 0.6;
-    transition: opacity 0.3s ease;
-}
-
-.lang-flag.active {
-    opacity: 1;
-    transform: scale(1.05);
-}
-
-.en,
-.es {
-    color: var(--color-primary-variant);
-}
-
-.en {
-    margin-right: 0.8rem;
-}
-
-.es {
-    margin-left: 0.8rem;
-}
-
-.active__lang {
-    color: var(--color-primary);
-}
-
-.check {
-    position: relative;
-    width: 50px;
-    cursor: pointer;
-}
-
-.check:before {
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 25px;
-    background: var(--color-bg-variant);
-
-    border-radius: 25px;
-}
-
-.check:checked:before {
-    background: var(--color-primary);
-}
-
-.check:after {
-    content: '';
-    position: absolute;
-    left: 0px;
-    width: 25px;
-    height: 25px;
-    background: var(--color-white);
-    border-radius: 25px;
-    transition: 0.25s;
-    border: 1px solid var(--color-bg);
-    box-sizing: border-box;
-}
-
-.check:checked:after {
-    left: 25px;
-    border: 2px solid var(--color-bg-variant);
-}
-
-/* ======================= MEDIA QUERIES (MEDIUM DEVICES) ======================= */
+/* ======================= MEDIA QUERIES ======================= */
 @media screen and (max-width: 1024px) {
     header {
         height: 100vh;
@@ -206,9 +142,14 @@ header {
     .scroll__down {
         display: none;
     }
+
+    .switch__language {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 1rem;
+    }
 }
 
-/* ======================= MEDIA QUERIES (SMALL DEVICES) ======================= */
 @media screen and (max-width: 600px) {
     header {
         height: 100vh;
@@ -217,5 +158,12 @@ header {
     .header__socials,
     .scroll__down {
         display: none;
+    }
+
+    .switch__language {
+        gap: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 1rem;
     }
 }

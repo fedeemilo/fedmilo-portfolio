@@ -17,15 +17,22 @@ const SwitchLang = () => {
                 src={ICONS.FLAG_EN}
                 alt="English"
                 className={`lang-flag ${lang === 'en' ? 'active' : ''}`}
+                draggable="false"
             />
             <label className="switch">
-                <input type="checkbox" onChange={handleSwitch} checked={lang === 'es'} />
+                <input
+                    type="checkbox"
+                    onChange={handleSwitch}
+                    checked={lang === 'es'}
+                    aria-label="Change language"
+                />
                 <span className="slider"></span>
             </label>
             <img
                 src={ICONS.FLAG_ES}
                 alt="Español"
                 className={`lang-flag ${lang === 'es' ? 'active' : ''}`}
+                draggable="false"
             />
         </div>
     )
