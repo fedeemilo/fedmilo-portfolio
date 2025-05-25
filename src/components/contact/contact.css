@@ -1,6 +1,5 @@
 /* ============ CONTACT ============ */
 .container.contact__container {
-
     width: 58%;
     display: grid;
     grid-template-columns: 30% 58%;
@@ -39,11 +38,26 @@
     font-size: 0.8rem;
 }
 
+.contact__option h5 {
+    word-break: break-all;
+    font-size: 0.9rem;
+    overflow-wrap: anywhere;
+    line-height: 1.2;
+}
+
 /* ======================= MEDIA QUERIES (MEDIUM DEVICES) ======================= */
 @media screen and (max-width: 1024px) {
     .container.contact__container {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .contact__option {
+        padding: 1rem;
+    }
+
+    .contact__option h5 {
+        font-size: 0.85rem;
     }
 }
 
