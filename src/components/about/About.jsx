@@ -1,14 +1,14 @@
-import "./about.css";
-import { useContext } from "react";
-import { ICONS } from "../../constants/icons";
-import { ABOUT_CARDS, ABOUT_ME_TEXT } from "../../constants/about";
-import { STRINGS } from "../../constants/strings";
-import { CONTEXT } from "../../core/context";
+import './about.css'
+import { useContext } from 'react'
+import { ICONS } from '../../constants/icons'
+import { ABOUT_CARDS, ABOUT_ME_TEXT } from '../../constants/about'
+import { STRINGS } from '../../constants/strings'
+import { CONTEXT } from '../../core/context'
 
 const About = () => {
     const {
         state: { lang }
-    } = useContext(CONTEXT);
+    } = useContext(CONTEXT)
 
     return (
         <section id="about">
@@ -33,7 +33,7 @@ const About = () => {
                         ))}
                     </div>
 
-                    <p>{ABOUT_ME_TEXT[lang]}</p>
+                    <p className="about__description">{ABOUT_ME_TEXT[lang]}</p>
 
                     <a href="#contact" className="btn btn-primary">
                         {STRINGS.LETS_TALK[lang]}
@@ -41,7 +41,7 @@ const About = () => {
                 </div>
             </div>
         </section>
-    );
-};
+    )
+}
 
-export default About;
+export default About

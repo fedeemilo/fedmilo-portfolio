@@ -1,9 +1,9 @@
+import './header.css'
 import { useContext } from 'react'
 import { STRINGS } from '../../constants/strings'
 import { ICONS } from '../../constants/icons'
 import { CONTEXT } from '../../core/context'
 import CTA from './CTA'
-import './header.css'
 import HeaderSocials from './HeaderSocials'
 import SwitchLang from './SwitchLang'
 

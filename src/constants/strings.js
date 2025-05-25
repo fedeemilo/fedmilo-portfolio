@@ -110,8 +110,8 @@ export const STRINGS = {
         full: 'Federico Milone'
     },
     FEDMILO_COPYRIGHT: {
-        en: 'fedmilo | Portfolio 2023',
-        es: 'fedmilo | Portfolio 2023'
+        en: 'fedmilo | Portfolio 2025',
+        es: 'fedmilo | Portfolio 2025'
     },
     FORM_ERROR: {
         en: 'There was an error sending the message.',

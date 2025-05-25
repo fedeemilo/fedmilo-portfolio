@@ -1,14 +1,13 @@
-import "./experience.css";
-import { useContext } from "react";
-import { BsPatchCheckFill } from "react-icons/bs";
-import { EXP_CONTAINER } from "../../constants/experience";
-import { STRINGS } from "../../constants/strings";
-import { CONTEXT } from "../../core/context";
+import './experience.css'
+import { useContext } from 'react'
+import { EXP_CONTAINER } from '../../constants/experience'
+import { STRINGS } from '../../constants/strings'
+import { CONTEXT } from '../../core/context'
 
 const Experience = () => {
     const {
         state: { lang }
-    } = useContext(CONTEXT);
+    } = useContext(CONTEXT)
 
     return (
         <section id="experience">
@@ -20,18 +19,11 @@ const Experience = () => {
                     <div key={id} className={`experience__${type}`}>
                         <h3>{title(lang)}</h3>
                         <div className="experience__content">
-                            {content.map(({ id, title, detail }) => (
-                                <article
-                                    key={id}
-                                    className="experience__details"
-                                >
-                                    <BsPatchCheckFill className="experience__details-icon" />
-                                    <div>
-                                        <h4>{title}</h4>
-                                        <small className="text-light">
-                                            {detail(lang)}
-                                        </small>
-                                    </div>
+                            {content.map(({ id, title, detail, icon }) => (
+                                <article className="experience__card">
+                                    <div className="experience__icon">{icon}</div>
+                                    <h4>{title}</h4>
+                                    <small>{detail(lang)}</small>
                                 </article>
                             ))}
                         </div>
@@ -39,7 +31,7 @@ const Experience = () => {
                 ))}
             </div>
         </section>
-    );
-};
+    )
+}
 
-export default Experience;
+export default Experience

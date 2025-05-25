@@ -35,7 +35,7 @@ const CONTACT_OPTIONS = [
         id: 1,
         icon: <MdOutlineEmail className="contact__option-icon" />,
         option: 'Email',
-        value: 'fedmilo9101@gmail.com',
+        value: 'fedmilo91@gmail.com',
         text: lang => STRINGS.SEND_A_MESSAGE[lang],
         href: 'mailto:fedmilo91@gmail.com'
     }
