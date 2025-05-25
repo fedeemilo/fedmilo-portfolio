@@ -4,6 +4,7 @@ import { PORTFOLIO_ITEMS } from '../../constants/portfolio'
 import { STRINGS } from '../../constants/strings'
 import './portfolio.css'
 import Tooltip from '../../common/tooltip/Tooltip'
+import OptimizedImage from '../../common/optimized-image/OptimizedImage'
 
 const Portfolio = () => {
     const {
@@ -17,10 +18,15 @@ const Portfolio = () => {
 
             <div className="container portfolio__container">
                 {PORTFOLIO_ITEMS(lang).map(
-                    ({ id, image, title, subtitle, github, demo, stack }) => (
+                    ({ id, image, imageWebp, title, subtitle, github, demo, stack }) => (
                         <article key={id} className="portfolio__item">
                             <div className="portfolio__item-image">
-                                <img src={image} alt={title} />
+                                <OptimizedImage
+                                    src={image}
+                                    srcWebp={imageWebp}
+                                    alt={title}
+                                    className="portfolio__image"
+                                />
                             </div>
                             <h3>{title}</h3>
                             <h4>{subtitle}</h4>

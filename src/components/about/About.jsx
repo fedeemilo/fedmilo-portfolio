@@ -4,6 +4,7 @@ import { ICONS } from '../../constants/icons'
 import { ABOUT_CARDS, ABOUT_ME_TEXT } from '../../constants/about'
 import { STRINGS } from '../../constants/strings'
 import { CONTEXT } from '../../core/context'
+import OptimizedImage from '../../common/optimized-image/OptimizedImage'
 
 const About = () => {
     const {
@@ -18,7 +19,11 @@ const About = () => {
             <div className="container about__container">
                 <div className="about__me">
                     <div className="about__me-image">
-                        <img src={ICONS.ME_ABOUT} alt="me-about" />
+                        <OptimizedImage
+                            src={ICONS.ME_ABOUT}
+                            srcWebp={ICONS.ME_ABOUT_WEBP}
+                            alt="me-about"
+                        />
                     </div>
                 </div>
 

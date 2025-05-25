@@ -16,16 +16,8 @@ const FOOTER_LINKS = [
         title: lang => STRINGS.EXPERIENCE[lang]
     },
     {
-        id: '#services',
-        title: lang => STRINGS.SERVICES[lang]
-    },
-    {
         id: '#portfolio',
         title: lang => STRINGS.PORTFOLIO[lang]
-    },
-    {
-        id: '#testimonials',
-        title: lang => STRINGS.TESTIMONIALS[lang]
     },
     {
         id: '#contact',

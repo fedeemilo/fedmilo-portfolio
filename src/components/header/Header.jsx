@@ -6,6 +6,7 @@ import { CONTEXT } from '../../core/context'
 import CTA from './CTA'
 import HeaderSocials from './HeaderSocials'
 import SwitchLang from './SwitchLang'
+import OptimizedImage from '../../common/optimized-image/OptimizedImage'
 
 const Header = () => {
     const {
@@ -23,7 +24,7 @@ const Header = () => {
                 <HeaderSocials />
 
                 <div className="me">
-                    <img src={ICONS.ME} alt="me" />
+                    <OptimizedImage src={ICONS.ME} srcWebp={ICONS.ME_WEBP} alt="me" />
                 </div>
 
                 <a href="#contact" className="scroll__down">

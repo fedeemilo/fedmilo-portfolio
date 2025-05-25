@@ -15,7 +15,8 @@ import { TbBrandThreejs } from 'react-icons/tb'
 const PORTFOLIO_ITEMS = lang => [
     {
         id: 1,
-        image: ICONS.PORTFOLIO_IMG1,
+        image: ICONS.PORTFOLIO_TRAVEL_ADVISOR,
+        imageWebp: ICONS.PORTFOLIO_TRAVEL_ADVISOR_WEBP,
         title: STRINGS.APP_TRAVEL_ADVISOR_TITLE,
         subtitle: STRINGS.APP_TRAVEL_ADVISOR_SUBTITLE[lang],
         github: 'https://github.com/fedeemilo/travel-advisor',
@@ -27,7 +28,8 @@ const PORTFOLIO_ITEMS = lang => [
     },
     {
         id: 2,
-        image: ICONS.PORTFOLIO_IMG2,
+        image: ICONS.PORTFOLIO_CRYPTOLAND,
+        imageWebp: ICONS.PORTFOLIO_CRYPTOLAND_WEBP,
         title: 'Cryptoland',
         subtitle: STRINGS.APP_CRYPTOLAND_SUBTITLE[lang],
         github: 'https://github.com/fedeemilo/cryptoland',
@@ -40,7 +42,8 @@ const PORTFOLIO_ITEMS = lang => [
     },
     {
         id: 3,
-        image: ICONS.PORTFOLIO_IMG3,
+        image: ICONS.PORTFOLIO_REALTOR,
+        imageWebp: ICONS.PORTFOLIO_REALTOR_WEBP,
         title: STRINGS.APP_REALTOR,
         subtitle: STRINGS.APP_REALTOR_SUBTITLE[lang],
         github: 'https://github.com/fedeemilo/realtor',
@@ -52,7 +55,8 @@ const PORTFOLIO_ITEMS = lang => [
     },
     {
         id: 4,
-        image: ICONS.PORTFOLIO_IMG4,
+        image: ICONS.PORTFOLIO_CODEAI,
+        imageWebp: ICONS.PORTFOLIO_CODEAI_WEBP,
         title: 'Codeai',
         subtitle: STRINGS.APP_CODEAI_SUBTITLE[lang],
         github: 'https://github.com/fedeemilo/codeai-react',
@@ -64,7 +68,8 @@ const PORTFOLIO_ITEMS = lang => [
     },
     {
         id: 5,
-        image: ICONS.PORTFOLIO_IMG5,
+        image: ICONS.PORTFOLIO_TSHIRTS,
+        imageWebp: ICONS.PORTFOLIO_TSHIRTS_WEBP,
         title: 'Shirts',
         subtitle: STRINGS.APP_SHIRTS[lang],
         github: 'https://github.com/fedeemilo/shirts_threejs_ai',
@@ -77,7 +82,8 @@ const PORTFOLIO_ITEMS = lang => [
     },
     {
         id: 6,
-        image: ICONS.PORTFOLIO_IMG7,
+        image: ICONS.PORTFOLIO_MAMOVIES,
+        imageWebp: ICONS.PORTFOLIO_MAMOVIES_WEBP,
         title: 'Mamovies',
         subtitle: STRINGS.APP_MAMOVIES_SUBTITLE[lang],
         demo: 'https://mamovies.io',
@@ -88,7 +94,8 @@ const PORTFOLIO_ITEMS = lang => [
     },
     {
         id: 7,
-        image: ICONS.PORTFOLIO_IMG8,
+        image: ICONS.PORTFOLIO_CODEFIX,
+        imageWebp: ICONS.PORTFOLIO_CODEFIX_WEBP,
         title: STRINGS.APP_CODEFIX,
         subtitle: STRINGS.APP_CODEFIX_SUBTITLE[lang],
         github: 'https://github.com/fedeemilo/codefix',

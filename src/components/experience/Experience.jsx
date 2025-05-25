@@ -20,7 +20,7 @@ const Experience = () => {
                         <h3>{title(lang)}</h3>
                         <div className="experience__content">
                             {content.map(({ id, title, detail, icon }) => (
-                                <article className="experience__card">
+                                <article key={id} className="experience__card">
                                     <div className="experience__icon">{icon}</div>
                                     <h4>{title}</h4>
                                     <small>{detail(lang)}</small>
