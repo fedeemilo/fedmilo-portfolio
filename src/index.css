@@ -62,7 +62,7 @@ html {
 
 body {
     font-family: 'Manrope', sans-serif;
-    background: var(--color-bg);
+    background: var(--color-footer-bg);
     color: var(--color-white);
     line-height: 1.7;
     overflow-x: hidden;

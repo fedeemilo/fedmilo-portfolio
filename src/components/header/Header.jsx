@@ -44,12 +44,6 @@ const Header = () => {
                         {STRINGS.LETS_TALK[lang]}
                     </a>
                 </div>
-
-                <div className="scroll__cue">
-                    <a href="#portfolio" aria-label="Scroll down to portfolio">
-                        <span className="arrow-down"></span>
-                    </a>
-                </div>
             </div>
         </header>
     )
