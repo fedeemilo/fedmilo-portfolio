@@ -1,12 +1,11 @@
 import './header.css'
 import { useContext } from 'react'
-import { STRINGS } from '../../constants/strings'
-import { ICONS } from '../../constants/icons'
 import { CONTEXT } from '../../core/context'
-import CTA from './CTA'
-import HeaderSocials from './HeaderSocials'
-import SwitchLang from './SwitchLang'
+import { STRINGS } from '../../constants/strings'
 import OptimizedImage from '../../common/optimized-image/OptimizedImage'
+import { ICONS } from '../../constants/icons'
+import { ABOUT_CARDS, ABOUT_ME_TEXT } from '../../constants/about'
+import { FaComments } from 'react-icons/fa'
 
 const Header = () => {
     const {
@@ -15,21 +14,42 @@ const Header = () => {
 
     return (
         <header id="header">
-            <SwitchLang />
             <div className="container header__container">
-                <h5>{STRINGS.HELLO_IM[lang]}</h5>
-                <h1>{STRINGS.MY_ALIAS}</h1>
-                <h5 className="text-light">{STRINGS.MY_STACK[lang]}</h5>
-                <CTA lang={lang} />
-                <HeaderSocials />
-
-                <div className="me">
-                    <OptimizedImage src={ICONS.ME} srcWebp={ICONS.ME_WEBP} alt="me" />
+                <div className="header__intro">
+                    <div className="header__avatar">
+                        <OptimizedImage src={ICONS.ME} srcWebp={ICONS.ME_WEBP} alt="me" />
+                    </div>
+                    <div className="header__info">
+                        <h1>fedmilo</h1>
+                        <h2 className="text-light">Web Developer & Digital Craftsman</h2>
+                        <p className="header__realname">Federico Milone</p>
+                    </div>
                 </div>
 
-                <a href="#contact" className="scroll__down">
-                    {STRINGS.SCROLL_DOWN[lang]}
-                </a>
+                <div className="header__about">
+                    <div className="about__cards">
+                        {ABOUT_CARDS.map(({ key, icon, title, detail }) => (
+                            <article key={key} className="about__card">
+                                {icon}
+                                <h5>{title(lang)}</h5>
+                                <small>{detail(lang)}</small>
+                            </article>
+                        ))}
+                    </div>
+
+                    <p className="about__description">{ABOUT_ME_TEXT[lang]}</p>
+
+                    <a href="#contact" className="btn btn-primary">
+                        <FaComments style={{ marginRight: '0.5rem' }} />
+                        {STRINGS.LETS_TALK[lang]}
+                    </a>
+                </div>
+
+                <div className="scroll__cue">
+                    <a href="#portfolio" aria-label="Scroll down to portfolio">
+                        <span className="arrow-down"></span>
+                    </a>
+                </div>
             </div>
         </header>
     )
