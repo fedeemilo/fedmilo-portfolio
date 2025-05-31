@@ -11,31 +11,28 @@
 }
 
 :root {
-    --color-bg: #0a0a0a;
-    --color-bg-variant: #121212;
-    --color-primary: #7aa2b8;
-    --color-primary-variant: rgba(75, 92, 100, 0.3);
-    --color-white: #e0e0e0;
-    --color-light: rgba(200, 200, 200, 0.45);
-    --color-text-main: rgba(240, 240, 240, 0.86);
+    --color-bg: #fdfdfd;
+    --color-bg-variant: #f0f0f0;
+    --color-primary: #3b82f6;
+    --color-primary-variant: rgba(59, 130, 246, 0.3);
+    --color-white: #1e1e1e;
+    --color-light: rgba(30, 30, 30, 0.65);
+    --color-text-main: rgba(30, 30, 30, 0.86);
 
-    --color-card-bg: rgba(224, 224, 224, 0.02);
-    --color-card-bg-hover: rgba(224, 224, 224, 0.04);
-    --color-shadow-base: rgba(0, 0, 0, 0.2);
-    --color-shadow-hover: rgba(75, 92, 100, 0.3);
+    --color-card-bg: rgba(0, 0, 0, 0.02);
+    --color-card-bg-hover: rgba(0, 0, 0, 0.06);
+    --color-description-bg: rgba(0, 0, 0, 0.03);
+    --color-description-shadow: rgba(0, 0, 0, 0.12);
 
-    --color-description-bg: rgba(224, 224, 224, 0.03);
-    --color-description-shadow: rgba(75, 92, 100, 0.15);
+    --color-btn-bg: rgba(0, 0, 0, 0.03);
+    --color-btn-bg-hover: rgba(0, 0, 0, 0.08);
+    --color-btn-shadow: rgba(0, 0, 0, 0.15);
+    --color-btn-text: #1e1e1e;
 
-    --color-btn-bg: rgba(255, 255, 255, 0.03);
-    --color-btn-bg-hover: rgba(255, 255, 255, 0.12);
-    --color-btn-shadow: rgba(75, 92, 100, 0.4);
-    --color-btn-text: rgba(255, 255, 255, 0.85);
-
-    --color-footer-bg: #0d0d0d;
-    --color-footer-text: rgba(255, 255, 255, 0.6);
-    --color-footer-hover: #ffffff;
-    --color-footer-border: rgba(255, 255, 255, 0.1);
+    --color-footer-bg: #f0f0f0;
+    --color-footer-text: rgba(0, 0, 0, 0.6);
+    --color-footer-hover: #000;
+    --color-footer-border: rgba(0, 0, 0, 0.1);
 
     --font-size-xs: 0.875rem;
     --font-size-sm: 1rem;
@@ -49,6 +46,31 @@
     --container-width-lg: 75%;
     --container-width-md: 86%;
     --container-width-sm: 90%;
+}
+
+[data-theme='dark'] {
+    --color-bg: #121212;
+    --color-bg-variant: #1a1a1a;
+    --color-primary: #7aa2b8;
+    --color-primary-variant: rgba(75, 92, 100, 0.3);
+    --color-white: #e0e0e0;
+    --color-light: rgba(200, 200, 200, 0.45);
+    --color-text-main: rgba(240, 240, 240, 0.86);
+
+    --color-card-bg: rgba(224, 224, 224, 0.02);
+    --color-card-bg-hover: rgba(224, 224, 224, 0.04);
+    --color-description-bg: rgba(224, 224, 224, 0.03);
+    --color-description-shadow: rgba(75, 92, 100, 0.15);
+
+    --color-btn-bg: rgba(255, 255, 255, 0.03);
+    --color-btn-bg-hover: rgba(255, 255, 255, 0.12);
+    --color-btn-shadow: rgba(75, 92, 100, 0.4);
+    --color-btn-text: rgba(255, 255, 255, 0.85);
+
+    --color-footer-bg: #0d0d0d;
+    --color-footer-text: rgba(255, 255, 255, 0.6);
+    --color-footer-hover: #ffffff;
+    --color-footer-border: rgba(255, 255, 255, 0.1);
 }
 
 *,

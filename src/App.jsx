@@ -9,6 +9,7 @@ import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import { ADD_INITIAL_VALUE, CHANGE_LANGUAGE } from './core/types'
 import { Toaster } from 'react-hot-toast'
+import ThemeToggle from './common/theme-toggle/ThemeToggle'
 
 const App = () => {
     const [state, dispatch] = useReducer(language, store)
@@ -32,6 +33,7 @@ const App = () => {
         <>
             <Toaster />
             <Provider value={{ dispatch, state }}>
+                <ThemeToggle />
                 <Header />
                 <Nav />
                 <Portfolio />
