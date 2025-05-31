@@ -1,0 +1,46 @@
+#workspace {
+    padding: 4rem 0;
+    text-align: center;
+    background: var(--color-bg-variant);
+    color: var(--color-text-main);
+}
+
+#workspace h2 {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.workspace__image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+}
+
+.workspace__description {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--color-light);
+}
+
+.workspace__img {
+    display: block;
+    max-width: 960px;
+    width: 90%;
+    border-radius: 1rem;
+    opacity: 0.95;
+    filter: brightness(0.95) contrast(1.05) saturate(1.1);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    transition:
+        transform 0.3s ease,
+        filter 0.3s ease;
+    transform: translateX(-1%);
+}
+
+.workspace__img:hover {
+    transform: scale(1.015);
+    filter: brightness(1) contrast(1.1) saturate(1.2);
+}

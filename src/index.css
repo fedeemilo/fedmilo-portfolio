@@ -11,25 +11,25 @@
 }
 
 :root {
-    --color-bg: #fdfdfd;
-    --color-bg-variant: #f0f0f0;
+    --color-bg: #f5f6f7;
+    --color-bg-variant: #ffffff;
     --color-primary: #3b82f6;
-    --color-primary-variant: rgba(59, 130, 246, 0.3);
+    --color-primary-variant: rgba(59, 130, 246, 0.2);
     --color-white: #1e1e1e;
-    --color-light: rgba(30, 30, 30, 0.65);
-    --color-text-main: rgba(30, 30, 30, 0.86);
+    --color-light: rgba(30, 30, 30, 0.6);
+    --color-text-main: rgba(30, 30, 30, 0.9);
 
-    --color-card-bg: rgba(0, 0, 0, 0.02);
-    --color-card-bg-hover: rgba(0, 0, 0, 0.06);
-    --color-description-bg: rgba(0, 0, 0, 0.03);
-    --color-description-shadow: rgba(0, 0, 0, 0.12);
+    --color-card-bg: #ffffff;
+    --color-card-bg-hover: #f3f4f6;
+    --color-description-bg: #ffffff;
+    --color-description-shadow: rgba(0, 0, 0, 0.06);
 
-    --color-btn-bg: rgba(0, 0, 0, 0.03);
+    --color-btn-bg: rgba(0, 0, 0, 0.04);
     --color-btn-bg-hover: rgba(0, 0, 0, 0.08);
-    --color-btn-shadow: rgba(0, 0, 0, 0.15);
+    --color-btn-shadow: rgba(0, 0, 0, 0.1);
     --color-btn-text: #1e1e1e;
 
-    --color-footer-bg: #f0f0f0;
+    --color-footer-bg: #f3f4f6;
     --color-footer-text: rgba(0, 0, 0, 0.6);
     --color-footer-hover: #000;
     --color-footer-border: rgba(0, 0, 0, 0.1);
@@ -49,25 +49,25 @@
 }
 
 [data-theme='dark'] {
-    --color-bg: #121212;
-    --color-bg-variant: #1a1a1a;
+    --color-bg: #151515;
+    --color-bg-variant: #1f1f1f;
     --color-primary: #7aa2b8;
-    --color-primary-variant: rgba(75, 92, 100, 0.3);
-    --color-white: #e0e0e0;
-    --color-light: rgba(200, 200, 200, 0.45);
-    --color-text-main: rgba(240, 240, 240, 0.86);
+    --color-primary-variant: rgba(122, 162, 184, 0.2);
+    --color-white: #f0f0f0;
+    --color-light: rgba(240, 240, 240, 0.6);
+    --color-text-main: rgba(240, 240, 240, 0.92);
 
-    --color-card-bg: rgba(224, 224, 224, 0.02);
-    --color-card-bg-hover: rgba(224, 224, 224, 0.04);
-    --color-description-bg: rgba(224, 224, 224, 0.03);
-    --color-description-shadow: rgba(75, 92, 100, 0.15);
+    --color-card-bg: rgba(255, 255, 255, 0.02);
+    --color-card-bg-hover: rgba(255, 255, 255, 0.05);
+    --color-description-bg: rgba(255, 255, 255, 0.03);
+    --color-description-shadow: rgba(122, 162, 184, 0.1);
 
-    --color-btn-bg: rgba(255, 255, 255, 0.03);
+    --color-btn-bg: rgba(255, 255, 255, 0.05);
     --color-btn-bg-hover: rgba(255, 255, 255, 0.12);
-    --color-btn-shadow: rgba(75, 92, 100, 0.4);
-    --color-btn-text: rgba(255, 255, 255, 0.85);
+    --color-btn-shadow: rgba(122, 162, 184, 0.3);
+    --color-btn-text: rgba(255, 255, 255, 0.9);
 
-    --color-footer-bg: #0d0d0d;
+    --color-footer-bg: #131313;
     --color-footer-text: rgba(255, 255, 255, 0.6);
     --color-footer-hover: #ffffff;
     --color-footer-border: rgba(255, 255, 255, 0.1);
@@ -205,6 +205,12 @@ img {
     object-fit: cover;
 }
 
+picture {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 /* ======================= MEDIA QUERIES (MEDIUM DEVICES) ======================= */
 @media screen and (max-width: 1024px) {
     .container {
@@ -225,4 +231,20 @@ img {
     section > h2 {
         margin-top: 2rem;
     }
+}
+
+html,
+body,
+section,
+header,
+footer,
+button,
+a,
+div,
+article {
+    transition:
+        background-color 0.4s ease,
+        color 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
 }

@@ -1,5 +1,9 @@
-import ME from '../assets/me.png'
-import ME_WEBP from '../assets/me.webp'
+import ME_DARK from '../assets/me-dark.png'
+import ME_LIGHT from '../assets/me-light.png'
+import ME_DARK_WEBP from '../assets/me-dark.webp'
+import ME_LIGHT_WEBP from '../assets/me-light.webp'
+import ME_DESK from '../assets/me-desk.png'
+import ME_DESK_WEBP from '../assets/me-desk.webp'
 import PORTFOLIO_TRAVEL_ADVISOR from '../assets/portfolio-traveladvisor.png'
 import PORTFOLIO_TRAVEL_ADVISOR_WEBP from '../assets/portfolio-traveladvisor.webp'
 import PORTFOLIO_CRYPTOLAND from '../assets/portfolio-cryptoland.png'
@@ -16,8 +20,12 @@ import PORTFOLIO_CODEFIX from '../assets/portfolio-codefix.png'
 import PORTFOLIO_CODEFIX_WEBP from '../assets/portfolio-codefix.webp'
 
 export const ICONS = {
-    ME,
-    ME_WEBP,
+    ME_DARK,
+    ME_DARK_WEBP,
+    ME_LIGHT,
+    ME_LIGHT_WEBP,
+    ME_DESK,
+    ME_DESK_WEBP,
     PORTFOLIO_TRAVEL_ADVISOR,
     PORTFOLIO_TRAVEL_ADVISOR_WEBP,
     PORTFOLIO_CRYPTOLAND,

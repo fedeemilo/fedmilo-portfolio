@@ -10,6 +10,7 @@ import Footer from './components/footer/Footer'
 import { ADD_INITIAL_VALUE, CHANGE_LANGUAGE } from './core/types'
 import { Toaster } from 'react-hot-toast'
 import ThemeToggle from './common/theme-toggle/ThemeToggle'
+import Workspace from './components/workspace/Workspace'
 
 const App = () => {
     const [state, dispatch] = useReducer(language, store)
@@ -36,6 +37,7 @@ const App = () => {
                 <ThemeToggle />
                 <Header />
                 <Nav />
+                <Workspace />
                 <Portfolio />
                 <Contact />
                 <Footer />

@@ -1,22 +1,26 @@
-import './theme-toggle.css'
 import { useEffect, useState } from 'react'
-import { BsSun, BsMoon } from 'react-icons/bs'
+import { FaMoon, FaSun } from 'react-icons/fa'
+import './theme-toggle.css'
 
 const ThemeToggle = () => {
-    const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark')
+    const [theme, setTheme] = useState('dark')
 
     useEffect(() => {
-        document.documentElement.setAttribute('data-theme', theme)
-        localStorage.setItem('theme', theme)
-    }, [theme])
+        const savedTheme = localStorage.getItem('theme') || 'dark'
+        setTheme(savedTheme)
+        document.documentElement.setAttribute('data-theme', savedTheme)
+    }, [])
+
+    const toggleTheme = () => {
+        const newTheme = theme === 'dark' ? 'light' : 'dark'
+        setTheme(newTheme)
+        document.documentElement.setAttribute('data-theme', newTheme)
+        localStorage.setItem('theme', newTheme)
+    }
 
     return (
-        <button
-            className="theme-toggle"
-            onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-            aria-label="Toggle theme"
-        >
-            {theme === 'light' ? <BsMoon /> : <BsSun />}
+        <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
+            {theme === 'dark' ? <FaSun /> : <FaMoon />}
         </button>
     )
 }
