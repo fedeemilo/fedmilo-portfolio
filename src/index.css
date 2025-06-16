@@ -186,8 +186,8 @@ a:hover {
 }
 
 .btn-primary {
-    background: var(--color-primary);
-    color: var(--color-bg);
+    background: var(--color-bg);
+    color: var(--color-white);
     border: 1px solid var(--color-primary);
     box-shadow: 0 4px 16px var(--color-btn-shadow);
 }

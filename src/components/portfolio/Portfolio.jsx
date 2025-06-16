@@ -13,8 +13,7 @@ const Portfolio = () => {
     return (
         <section id="portfolio">
             <div className="portfolio-container">
-                <h5 className="portfolio-section-subtitle">{STRINGS.MY_RECENT_WORK[lang]}</h5>
-                <h2 className="portfolio-section-title">{STRINGS.PORTFOLIO[lang]}</h2>
+                <h5 className="portfolio-section-title">{STRINGS.MY_RECENT_WORK[lang]}</h5>
 
                 <div className="portfolio-list">
                     {PORTFOLIO_ITEMS(lang).map(item => (

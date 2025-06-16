@@ -37,7 +37,7 @@ const PORTFOLIO_ITEMS = lang => [
         subtitle: STRINGS.APP_REALTOR_SUBTITLE[lang],
         github: 'https://github.com/fedeemilo/realtor',
         demo: 'https://realtor-rose.vercel.app'
-    },
+    }
     // {
     //     id: 5,
     //     image: ICONS.PORTFOLIO_CODEAI,
@@ -47,15 +47,15 @@ const PORTFOLIO_ITEMS = lang => [
     //     github: 'https://github.com/fedeemilo/codeai-react',
     //     demo: 'https://codeai-bot.vercel.app'
     // },
-    {
-        id: 6,
-        image: ICONS.PORTFOLIO_TSHIRTS,
-        imageWebp: ICONS.PORTFOLIO_TSHIRTS_WEBP,
-        title: 'Shirts',
-        subtitle: STRINGS.APP_SHIRTS[lang],
-        github: 'https://github.com/fedeemilo/shirts_threejs_ai',
-        demo: 'https://shirts-threejs-ai.vercel.app/'
-    }
+    // {
+    //     id: 6,
+    //     image: ICONS.PORTFOLIO_TSHIRTS,
+    //     imageWebp: ICONS.PORTFOLIO_TSHIRTS_WEBP,
+    //     title: 'Shirts',
+    //     subtitle: STRINGS.APP_SHIRTS[lang],
+    //     github: 'https://github.com/fedeemilo/shirts_threejs_ai',
+    //     demo: 'https://shirts-threejs-ai.vercel.app/'
+    // }
 
     // {
     //     id: 7,
