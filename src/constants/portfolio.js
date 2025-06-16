@@ -9,7 +9,9 @@ const PORTFOLIO_ITEMS = lang => [
         title: 'Mamovies',
         subtitle: STRINGS.APP_MAMOVIES_SUBTITLE[lang],
         demo: 'https://mamovies.io',
-        requestAccess: true
+        requestAccess: true,
+        hasGif: true,
+        gif: require('../assets/portfolio/mamovies.gif')
     },
     {
         id: 2,
