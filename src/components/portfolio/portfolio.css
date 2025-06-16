@@ -27,7 +27,6 @@
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    width: 100%;
 }
 
 .portfolio-image-wrapper {
@@ -42,29 +41,22 @@
 
 .portfolio-image-combo-wrapper {
     display: flex;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
+    gap: 1.5rem;
     width: 100%;
-    max-width: 960px;
+    justify-content: center;
     flex-wrap: wrap;
+    max-width: 1220px;
 }
 
 .portfolio-image-combo-wrapper img {
-    width: 100%;
-    max-width: 460px;
+    flex: 1 1 45%;
+    max-width: 45%;
     border-radius: 1.5rem;
-    object-fit: cover;
+    object-fit: contain;
     height: auto;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     cursor: pointer;
-}
-
-.portfolio-text-content {
-    padding: 0 1rem;
-    max-width: 960px;
-    text-align: center;
 }
 
 .portfolio-image {

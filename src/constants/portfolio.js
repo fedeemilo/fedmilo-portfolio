@@ -11,7 +11,7 @@ const PORTFOLIO_ITEMS = lang => [
         demo: 'https://mamovies.io',
         requestAccess: true,
         hasGif: true,
-        gif: require('../assets/portfolio/mamovies.gif')
+        gif: require('../assets/portfolio/mamovies-demo.gif')
     },
     {
         id: 2,
@@ -20,7 +20,8 @@ const PORTFOLIO_ITEMS = lang => [
         title: STRINGS.APP_EDUVOICE,
         subtitle: STRINGS.APP_EDUVOICE_SUBTITLE[lang],
         github: 'https://github.com/fedeemilo/eduvoice-ai',
-        demo: 'https://www.eduvoice.ai/'
+        demo: 'https://www.eduvoice.ai/',
+        hasGif: false
     },
     // {
     //     id: 3,
