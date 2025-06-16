@@ -19,6 +19,8 @@ import PORTFOLIO_MAMOVIES from '../assets/portfolio/portfolio-mamovies.png'
 import PORTFOLIO_MAMOVIES_WEBP from '../assets/portfolio/portfolio-mamovies.webp'
 import PORTFOLIO_CODEFIX from '../assets/portfolio/portfolio-codefix.png'
 import PORTFOLIO_CODEFIX_WEBP from '../assets/portfolio/portfolio-codefix.webp'
+import PORTFOLIO_EDUVOICE from '../assets/portfolio/portfolio-eduvoice.png'
+import PORTFOLIO_EDUVOICE_WEBP from '../assets/portfolio/portfolio-eduvoice.webp'
 
 /* Workspace - Icons */
 import WORKSPACE_DESK1 from '../assets/workspace/workspace-desk1.png'
@@ -65,6 +67,8 @@ export const ICONS = {
     PORTFOLIO_MAMOVIES_WEBP,
     PORTFOLIO_CODEFIX,
     PORTFOLIO_CODEFIX_WEBP,
+    PORTFOLIO_EDUVOICE,
+    PORTFOLIO_EDUVOICE_WEBP,
     WORKSPACE_KEYBOARD1,
     WORKSPACE_KEYBOARD1_WEBP,
     WORKSPACE_KEYBOARD2,

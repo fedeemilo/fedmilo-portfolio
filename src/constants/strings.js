@@ -17,6 +17,11 @@ export const STRINGS = {
         en: 'Paste any error and get intelligent debugging suggestions powered by AI',
         es: 'Pegá cualquier error y obtené sugerencias inteligentes para depurarlo con ayuda de IA'
     },
+    APP_EDUVOICE: 'Eduvoice',
+    APP_EDUVOICE_SUBTITLE: {
+        en: 'AI-powered educational platform to create and talk with custom voice tutors in real time',
+        es: 'Plataforma educativa impulsada por IA para crear y hablar con tutores personalizados en tiempo real'
+    },
     APP_CRYPTOLAND_SUBTITLE: {
         en: 'Web portal with cryptocurrency information and news',
         es: 'Portal web con información y noticias sobre criptomonedas'
@@ -33,7 +38,7 @@ export const STRINGS = {
     },
     APP_MAMOVIES: 'Mamovies',
     APP_MAMOVIES_SUBTITLE: {
-        en: 'Web app for streaming movies, built with React and Redux',
+        en: 'Curated platform for exploring and watching horror films — from cult classics to underground gems',
         es: 'Aplicación web para streaming de películas, construida con React y Redux'
     },
     APP_SHIRTS: {
