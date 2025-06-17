@@ -7,14 +7,14 @@ export const WORKSPACE_MAIN_IMAGES = [
         image: ICONS.WORKSPACE_DESK1,
         webp: ICONS.WORKSPACE_DESK1_WEBP
     },
+    // {
+    //     id: 'desk2',
+    //     alt: 'Workspace view from the front',
+    //     image: ICONS.WORKSPACE_DESK2,
+    //     webp: ICONS.WORKSPACE_DESK2_WEBP
+    // },
     {
         id: 'desk2',
-        alt: 'Workspace view from the front',
-        image: ICONS.WORKSPACE_DESK2,
-        webp: ICONS.WORKSPACE_DESK2_WEBP
-    },
-    {
-        id: 'desk3',
         alt: 'Workspace view from the side',
         image: ICONS.WORKSPACE_DESK3,
         webp: ICONS.WORKSPACE_DESK3_WEBP

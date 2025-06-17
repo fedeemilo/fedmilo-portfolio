@@ -1,4 +1,5 @@
-import OptimizedImage from '../../common/optimized-image/OptimizedImage'
+import LazyFadeImage from '../../common/optimized-image/LazyFadeImage'
+import { ICONS } from '../../constants/icons'
 import { WORKSPACE_ITEMS, WORKSPACE_MAIN_IMAGES } from '../../constants/workspace'
 import './workspace.css'
 
@@ -15,9 +16,17 @@ const Workspace = () => {
                     environment where I bring my projects to life.
                 </p>
 
+                <LazyFadeImage
+                    key={'desk'}
+                    src={ICONS.WORKSPACE_DESK3}
+                    srcWebp={ICONS.WORKSPACE_DESK3_WEBP}
+                    alt={'Workspace view from the front'}
+                    className="workspace__img workspace__img--main"
+                />
+
                 <div className="workspace__image-wrapper">
                     {WORKSPACE_MAIN_IMAGES.map(({ id, alt, image, webp }) => (
-                        <OptimizedImage
+                        <LazyFadeImage
                             key={id}
                             src={image}
                             srcWebp={webp}
@@ -30,7 +39,7 @@ const Workspace = () => {
                 <div className="workspace__grid">
                     {WORKSPACE_ITEMS.map(({ id, title, description, images, webp }) => (
                         <div key={id} className="workspace__card">
-                            <OptimizedImage
+                            <LazyFadeImage
                                 src={images[0]}
                                 srcWebp={webp[0]}
                                 alt={title}
